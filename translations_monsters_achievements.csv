@@ -1,0 +1,310 @@
+Key,KO,EN,JA
+achievements.land_goblin.description,제 1구역: 고블린 영지를 격파했습니다.,"Sector 1: Defeated the Goblin Territory.",第1区域：ゴブリン領地を撃破しました。
+achievements.land_goblin.displayName,고블린 영지 정복,Conquer Goblin Territory,ゴブリン領地征服
+achievements.wave_30.description,웨이브 30을 모두 클리어하세요.,Clear all of Wave 30.,ウェーブ30をすべてクリアしてください。
+achievements.wave_30.displayName,전설의 수호자,Legendary Guardian,伝説の守護者
+achievements.wave_5.description,웨이브 5를 클리어하세요.,Clear Wave 5.,ウェーブ5をクリアしてください。
+achievements.wave_5.displayName,첫 관문,First Gate,最初の関門
+achievements.wave_50.displayName,불굴의 수호자,Indomitable Guardian,不屈の守護者
+achievements.wave_50.description,웨이브 50을 모두 클리어하세요.,Clear all of Wave 50.,ウェーブ50をすべてクリアしてください。
+achievements.wave_100.displayName,전설의 벽,Wall of Legend,伝説の壁
+achievements.wave_100.description,웨이브 100을 클리어하세요.,Clear Wave 100.,ウェーブ100をクリアしてください。
+achievements.wave_150.displayName,신화의 방어자,Mythic Defender,神話の守護者
+achievements.wave_150.description,웨이브 150을 클리어하세요.,Clear Wave 150.,ウェーブ150をクリアしてください。
+achievements.score_10000.displayName,점수의 달인,Score Master,スコアの達人
+achievements.score_10000.description,총 점수 10000점을 달성하세요.,Achieve a total score of 10000.,合計スコア10000点を達成してください。
+achievements.hard_clear.displayName,어려움의 정복자,Hard Mode Conqueror,ハード制覇者
+achievements.hard_clear.description,어려움 난이도로 클리어하세요.,Clear on Hard difficulty.,ハード難易度でクリアしてください。
+achievements.tutorial_master.displayName,튜토리얼 마스터,Tutorial Master,チュートリアルマスター
+achievements.tutorial_master.description,튜토리얼을 완료하세요.,Complete the tutorial.,チュートリアルを完了してください。
+achievements.land_orc.displayName,오크 영지 정복,Conquer Orc Territory,オーク領地征服
+achievements.land_orc.description,제 1구역: 오크 영지를 격파했습니다.,"Sector 1: Defeated the Orc Territory.",第1区域：オーク領地を撃破しました。
+achievements.land_tauren.displayName,타우렌 봉우리 정복,Conquer Tauren Peaks,タウレンの峰征服
+achievements.land_tauren.description,제 1구역: 타우렌 봉우리를 격파했습니다.,"Sector 1: Defeated the Tauren Peaks.",第1区域：タウレンの峰を撃破しました。
+achievements.land_darkelf.displayName,다크엘프 숲 정복,Conquer Dark Elf Forest,ダークエルフの森征服
+achievements.land_darkelf.description,제 2구역: 다크엘프 숲을 격파했습니다.,"Sector 2: Defeated the Dark Elf Forest.",第2区域：ダークエルフの森を撃破しました。
+achievements.land_fire.displayName,화염의 땅 정복,Conquer Firelands,火炎の地征服
+achievements.land_fire.description,제 2구역: 화염의 땅을 격파했습니다.,"Sector 2: Defeated the Firelands.",第2区域：火炎の地を撃破しました。
+achievements.land_ice.displayName,얼음 나라 정복,Conquer Ice Kingdom,氷の国征服
+achievements.land_ice.description,제 2구역: 얼음 나라를 격파했습니다.,"Sector 2: Defeated the Ice Kingdom.",第2区域：氷の国を撃破しました。
+achievements.land_undead.displayName,버림받은 도시 정복,Conquer Forsaken City,見捨てられた都市征服
+achievements.land_undead.description,제 3구역: 언데드 도시를 격파했습니다.,"Sector 3: Defeated the Undead City.",第3区域：アンデッド都市を撃破しました。
+achievements.land_poison.displayName,맹독 늪지대 정복,Conquer Venomous Swamp,猛毒の湿地帯征服
+achievements.land_poison.description,제 3구역: 맹독 늪지대를 격파했습니다.,"Sector 3: Defeated the Venomous Swamp.",第3区域：猛毒の湿地帯を撃破しました。
+achievements.land_merc.displayName,용병 주둔지 정복,Conquer Mercenary Camp,傭兵駐屯地征服
+achievements.land_merc.description,제 3구역: 용병 주둔지를 격파했습니다.,"Sector 3: Defeated the Mercenary Camp.",第3区域：傭兵駐屯地を撃破しました。
+achievements.land_ele.displayName,정령의 안식처 정복,Conquer Elemental Haven,精霊の安息所征服
+achievements.land_ele.description,제 4구역: 정령의 안식처를 격파했습니다.,"Sector 4: Defeated the Elemental Haven.",第4区域：精霊の安息所を撃破しました。
+achievements.land_sea.displayName,심해의 신전 정복,Conquer Deep Sea Temple,深海の神殿征服
+achievements.land_sea.description,제 4구역: 심해의 신전을 격파했습니다.,"Sector 4: Defeated the Deep Sea Temple.",第4区域：深海の神殿を撃破しました。
+achievements.land_sky.displayName,천공의 성채 정복,Conquer Sky Fortress,天空の城塞征服
+achievements.land_sky.description,제 4구역: 천공의 성채를 격파했습니다.,"Sector 4: Defeated the Sky Fortress.",第4区域：天空の城塞を撃破しました。
+achievements.land_demon.displayName,악마의 균열 정복,Conquer Demonic Rift,悪魔の亀裂征服
+achievements.land_demon.description,제 5구역: 악마의 균열을 격파했습니다.,"Sector 5: Defeated the Demonic Rift.",第5区域：悪魔の亀裂を撃破しました。
+achievements.land_dragon.displayName,용의 탑 정복,Conquer Dragon Tower,竜の塔征服
+achievements.land_dragon.description,제 5구역: 용의 탑을 격파했습니다.,"Sector 5: Defeated the Dragon Tower.",第5区域：竜の塔を撃破しました。
+
+achievements.sector_1_master.displayName,야성과 명예 정복자,Wilderness & Honor Conqueror,野性と名誉の征服者
+achievements.sector_1_master.description,제 1구역의 모든 랜드(고블린, 오크, 타우렌)를 クリア하세요.,"Clear all lands in Sector 1 (Goblin, Orc, Tauren).",第1区域のすべてのランド（ゴブリン、オーク、タウレン）をクリアしてください。
+achievements.sector_2_master.displayName,마력의 지배자,Master of Magic,魔力の支配者
+achievements.sector_2_master.description,제 2구역의 모든 랜드(다크엘프, 화염, 氷)를 クリア하세요.,"Clear all lands in Sector 2 (Dark Elf, Fire, Ice).",第2区域のすべてのランド（ダークエルフ、火炎、氷）をクリアしてください。
+achievements.sector_3_master.displayName,죽음을 넘은 자,Beyond Death,死を超えた者
+achievements.sector_3_master.description,제 3구역의 모든 랜드(언데드, 맹독, 傭兵)를 クリア하세요.,"Clear all lands in Sector 3 (Undead, Poison, Mercenary).",第3区域のすべてのランド（アンデッド、猛毒、傭兵）をクリアしてください。
+achievements.sector_4_master.displayName,원소의 대가,Master of Elements,元素の大家
+achievements.sector_4_master.description,제 4구역의 모든 랜드(정령, 심해, 천공)를 クリア하세요.,"Clear all lands in Sector 4 (Elemental, Sea, Sky).",第4区域のすべてのランド（精霊、深海、天空）をクリアしてください。
+achievements.sector_5_master.displayName,신화의 정복자,Mythic Conqueror,神話の征服者
+achievements.sector_5_master.description,제 5구역의 모든 랜드(악마, 드래곤)를 클리어하세요.,"Clear all lands in Sector 5 (Demon, Dragon).",第5区域のすべてのランド（悪魔、ドラゴン）をクリアしてください。
+achievements.elite_master.displayName,정예 난이도 정복자,Elite Difficulty Conqueror,精鋭難易度征服者
+achievements.elite_master.description,모든 랜드의 정예(Elite) 난이도를 정복하세요.,Conquer the Elite difficulty of all lands.,すべてのランドの精鋭（Elite）難易度を制覇してください。
+achievements.role_5_tank.displayName,철벽의 파티,Ironclad Party,鉄壁のパーティ
+achievements.role_5_tank.description,탱커 5명으로 어려움 난이도 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Tanks.,タンク5人でハード難易度のウェーブ30をクリアしてください。
+achievements.role_5_melee.displayName,칼날의 집결,Gathering of Blades,刃の集結
+achievements.role_5_melee.description,근딜 5명으로 어려움 난이도 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Melee DPS.,近接アタッカー5人でハード難易度のウェーブ30をクリアしてください。
+achievements.role_5_ranged.displayName,원거리 지배,Ranged Dominance,遠距離支配
+achievements.role_5_ranged.description,원딜 5명으로 어려움 난이도 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Ranged DPS.,遠距離アタッカー5人でハード難易度のウェーブ30をクリアしてください。
+achievements.role_5_healer.displayName,완전 치유 파티,Perfect Healing Party,完全治癒パーティ
+achievements.role_5_healer.description,힐러 5명으로 어려움 난이도 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Healers.,ヒーラー5人でハード難易度のウェーブ30をクリアしてください。
+achievements.role_3_cc.displayName,봉인의 파티,Seal Party,封印のパーティ
+achievements.role_3_cc.description,CC 3명 이상으로 어려움 난이도 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 3 or more CC heroes.,CC3人以上でハード難易度のウェーブ30をクリアしてください。
+achievements.role_all_5.displayName,완벽한 편성,Perfect Composition,完璧な編成
+achievements.role_all_5.description,탱/근딜/원딜/힐러/CC 모두 1명씩 포함하여 어려움 웨이브 30을 클리어하세요.,"Clear Wave 30 on Hard with 1 each of Tank, Melee, Ranged, Healer, and CC.",タンク/近接/遠距離/ヒーラー/CCを各1人ずつ含めてハードウェーブ30をクリアしてください。
+achievements.elem_shadow_5.displayName,어둠의 군단,Legion of Darkness,闇の軍団
+achievements.elem_shadow_5.description,암흑 속성 영웅 5명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 or more Shadow element heroes.,暗黒属性の英雄5人以上でハードウェーブ30をクリアしてください。
+achievements.elem_holy_4.displayName,신성한 파티,Holy Party,聖なるパーティ
+achievements.elem_holy_4.description,신성 속성 영웅 4명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 or more Holy element heroes.,神聖属性の英雄4人以上でハードウェーブ30をクリアしてください。
+achievements.elem_fire_4.displayName,화염의 군단,Legion of Fire,火炎の軍団
+achievements.elem_fire_4.description,화염 속성 영웅 4명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 or more Fire element heroes.,火炎属性の英雄4人以上でハードウェーブ30をクリアしてください。
+achievements.elem_nature_4.displayName,자연의 수호대,Guardians of Nature,自然の守護隊
+achievements.elem_nature_4.description,자연 속성 영웅 4명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 or more Nature element heroes.,自然属性の英雄4人以上でハードウェーブ30をクリアしてください。
+achievements.elem_frost_3.displayName,얼음의 파티,Ice Party,氷のパーティ
+achievements.elem_frost_3.description,서리+냉기 속성 합산 3명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard with 3 or more total Frost + Cold element heroes.,氷結＋冷気属性の合計3人以上でハードウェーブ30をクリアしてください。
+achievements.elem_dragon.displayName,용의 축복,Dragon's Blessing,竜の祝福
+achievements.elem_dragon.description,용 속성 영웅 1명 이상을 포함하여 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty including 1 or more Dragon element heroes.,竜属性の英雄1人以上を含めてハードウェーブ30をクリアしてください。
+achievements.elem_thunder_2.displayName,천둥의 파티,Thunder Party,雷のパーティ
+achievements.elem_thunder_2.description,번개 속성 영웅 2명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 2 or more Thunder element heroes.,雷属性の英雄2人以上でハードウェーブ30をクリアしてください。
+achievements.elem_wind_2.displayName,폭풍의 파티,Storm Party,嵐のパーティ
+achievements.elem_wind_2.description,바람 속성 영웅 2명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 2 or more Wind element heroes.,風属性の英雄2人以上でハードウェーブ30をクリアしてください。
+achievements.elem_poison_3.displayName,역병의 파티,Plague Party,疫病のパーティ
+achievements.elem_poison_3.description,독 속성 영웅 3명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 3 or more Poison element heroes.,毒属性の英雄3人以上でハードウェーブ30をクリアしてください。
+achievements.race_undead_5.displayName,죽음의 군단 지휘관,Undead Legion Commander,死の軍団指揮官
+achievements.race_undead_5.description,언데드 영웅 5명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Undead heroes.,アンデッドの英雄5人でハードウェーブ30をクリアしてください。
+achievements.race_tauren_4.displayName,대지의 어머니,Earth Mother,大地の母
+achievements.race_tauren_4.description,타우렌 영웅 4명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 Tauren heroes.,タウレンの英雄4人でハードウェーブ30をクリアしてください。
+achievements.race_orc_4.displayName,오크의 메아리,Echo of Orcs,オークの響き
+achievements.race_orc_4.description,오크 영웅 4명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 Orc heroes.,オークの英雄4人でハードウェーブ30をクリアしてください。
+achievements.race_bloodelf_3.displayName,선혈의 집결,Gathering of Blood,鮮血の集結
+achievements.race_bloodelf_3.description,블러드엘프 영웅 3명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 3 Blood Elf heroes.,ブラッドエルフの英雄3人でハードウェーブ30をクリアしてください。
+achievements.race_orc_3.displayName,오크 부족의 통일,Unification of Orc Tribes,オーク部族の統一
+achievements.race_orc_3.description,오크 영웅 3명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 3 Orc heroes.,オークの英雄3人でハードウェーブ30をクリアしてください。
+achievements.race_bloodelf_5.displayName,마력의 정점,Apex of Magic,魔力の頂点
+achievements.race_bloodelf_5.description,블러드엘프 영웅 5명으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 5 Blood Elf heroes.,ブラッドエルフの英雄5人でハードウェーブ30をクリアしてください。
+achievements.race_goblin_4.displayName,고블린 황제군,Goblin Emperor's Army,ゴブリン皇帝軍
+achievements.race_goblin_4.description,고블린 종족 영웅 4명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 or more Goblin heroes.,ゴブリン種族の英雄4人以上でハードウェーブ30をクリアしてください。
+achievements.race_human_4.displayName,왕국의 기사단,Kingdom Knights,王国の騎士団
+achievements.race_human_4.description,인간 종족 영웅 4명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 4 or more Human heroes.,人間種族の英雄4人以上でハードウェーブ30をクリアしてください。
+achievements.race_troll_3.displayName,트롤 주술 의식,Troll Shamanic Ritual,トロールの呪術儀式
+achievements.race_troll_3.description,트롤/잔달라 트롤 합산 3명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard with 3 or more total Troll + Zandalari Troll heroes.,トロール/ザンダラ・トロール合計3人以上でハードウェーブ30をクリアしてください。
+achievements.race_pandaren_3.displayName,판다렌의 축복,Pandaren Blessing,パンダレンの祝福
+achievements.race_pandaren_3.description,판다렌 종족 영웅 3명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 3 or more Pandaren heroes.,パンダレン種族の英雄3人以上でハードウェーブ30をクリアしてください。
+achievements.race_dracthyr_2.displayName,드렉티르 각성,Dracthyr Awakening,ドラクティールの覚醒
+achievements.race_dracthyr_2.description,드렉티르 종족 영웅 2명 이상으로 어려움 웨이브 30을 클리어하세요.,Clear Wave 30 on Hard difficulty with 2 or more Dracthyr heroes.,ドラクティール種族の英雄2人以上でハードウェーブ30をクリアしてください。
+achievements.race_elf_4.displayName,엘프의 각성,Elven Awakening,エルフの覚醒
+achievements.race_elf_4.description,엘프 계열(블러드엘프/공허엘프/나이트본/밤엘프) 합산 4명 이상으로 어려움 웨이브 30을 클리어하세요.,"Clear Wave 30 on Hard with 4 or more total Elven (Blood/Void/Nightborne/Night) heroes.",エルフ系（ブラッド/ヴォイド/ナイトボーン/ナイト）合計4人以上でハードウェーブ30をクリアしてください。
+monsterCategories.beast,"야수 계열",Beast,野獣
+monsterCategories.boss,"보스",Boss,ボス
+monsterCategories.dark,"암흑/공허 계열",Dark/Void,暗黒/虚空
+monsterCategories.elemental,"정령 계열",Elemental,精霊
+monsterCategories.giant,"언데드 거인 계열",Undead Giant,アンデッド巨人
+monsterCategories.goblin,"고블린 계열",Goblin,ゴブリン
+monsterCategories.golem,"골렘 계열",Golem,ゴーレム
+monsterCategories.orc,"오크/트롤 계열",Orc/Troll,オーク/トロール
+monsterCategories.skeleton,"해골/언데드 계열",Skeleton/Undead,スケルトン/アンデッド
+monsters.abomination.description,"수백 개의 시체 조각이 뒤엉킨 거대한 혐오 존재. HP 1500, 역병 냄새가 주변을 오염시킨다.","A massive abomination made of hundreds of tangled corpse pieces. HP 1500, the smell of plague pollutes the surroundings.","数百の死体の破片が絡み合った巨大な嫌悪の存在。HP1500、疫病の匂いが周囲を汚染する。"
+monsters.abomination.displayName,"누더기 골렘",Abomination,アボミネーション
+monsters.abomination.tip,"체력 1500에 방어력 5. 강한 한 방 딜러와 힐러를 함께 운용해야 한다. 혼자 두면 타워까지 뚫는다.","HP 1500, Defense 5. Must use a strong burst damage dealer and a healer together. If left alone, it will breach the tower.","体力1500、防御力5。強力な単発アタッカーとヒーラーを一緒に運用しなければならない。放置するとタワーまで突破される。"
+monsters.abyss_horror.description,"현실의 경계를 찢고 나온 공허의 현현. 체력 700에 무자비한 공격으로 방어선을 붕괴시킨다.","A manifestation of the void that tore through the boundaries of reality. HP 700, collapses the defense line with ruthless attacks.","現実の境界を引き裂いて現れた虚空の顕現。体力700、無慈悲な攻撃で防衛線を崩壊させる。"
+monsters.abyss_horror.displayName,"심연의 공포",Abyss Horror,深淵の恐怖
+monsters.abyss_horror.tip,"체력 700, 방어력 25의 최고급 근접 적. 탱커 2명 + 힐러 지원 없이는 무너진다. 보스 웨이브 전 만반의 준비를.","A top-tier melee enemy with 700 HP and 25 Defense. Without 2 tanks + healer support, you will fall. Prepare fully before the boss wave.","体力700、防御力25の最高級近接敵。タンク2人＋ヒーラーの支援がなければ崩壊する。ボスウェーブの前に万全の準備を。"
+monsters.bone_sniper.description,"저격을 특기로 하던 해골. 놀라운 사거리로 힐러와 원딜을 우선 노린다.","A skeleton specializing in sniping. Targets healers and ranged DPS first with amazing range.","狙撃を特技としていた骸骨。驚異的な射程でヒーラーと遠距離アタッカーを優先して狙う。"
+monsters.bone_sniper.displayName,"뼈 저격수",Bone Sniper,骨の狙撃手
+monsters.bone_sniper.tip,"사거리가 매우 길다. 힐러를 먼저 조준하니 방어선 뒤에 힐러를 숨기거나 빠르게 처치하라.","Very long range. Aims at healers first, so hide healers behind the defense line or eliminate it quickly.","射程が非常に長い。ヒーラーを先に狙うので、防衛線の後ろにヒーラーを隠すか、素早く倒せ。"
+monsters.cave_spider.description,"어두운 동굴에서 기어 나온 거대 거미. 속도 4.5로 방어선을 순식간에 뚫는다.","A giant spider crawling out of a dark cave. Breaches the defense line in an instant with a speed of 4.5.","暗い洞窟から這い出てきた巨大なクモ。速度4.5で防衛線を瞬く間に突破する。"
+monsters.cave_spider.displayName,"동굴 거미",Cave Spider,洞窟クモ
+monsters.cave_spider.tip,"매우 빠른 이동 속도. CC 스킬로 발을 묶지 않으면 탱커를 뛰어넘어 타워로 돌진한다.","Very fast movement speed. If not rooted with CC skills, it will jump over the tank and rush to the tower.","非常に速い移動速度。CCスキルで足止めしなければ、タンクを飛び越えてタワーに突進する。"
+monsters.crystal_golem.description,"순수한 마법 수정으로 형성된 골렘. 원거리에서 마력빔을 발사하고 방어력도 엄청나다.","A golem formed of pure magic crystals. Fires magic beams from a distance and has immense defense.","純粋な魔法の水晶で形成されたゴーレム。遠距離から魔力ビームを発射し、防御力も凄まじい。"
+monsters.crystal_golem.displayName,"수정 골렘",Crystal Golem,水晶ゴーレム
+monsters.crystal_golem.tip,"방어력 120의 원거리 골렘. 소환수로 물량 어그로를 분산시키고 다단 히트 딜러로 집중 공략하라.","A ranged golem with 120 defense. Disperse aggro with summons and focus attack with multi-hit damage dealers.","防御力120の遠距離ゴーレム。召喚獣でヘイトを分散させ、多段ヒットアタッカーで集中攻略しろ。"
+monsters.dark_archer.description,"어둠의 기운을 화살에 담아 쏘는 언데드. 빠른 이동 속도로 기회를 노린다.","An undead that shoots arrows imbued with dark energy. Looks for an opening with fast movement speed.","闇の気運を矢に込めて放つアンデッド。速い移動速度で機会をうかがう。"
+monsters.dark_archer.displayName,"암흑 궁수",Dark Archer,暗黒の射手
+monsters.dark_archer.tip,"빠른 원거리 적. 방어력이 낮아 처치는 쉽지만 원딜 영웅에 접근하기 전 CC로 막아야 한다.","Fast ranged enemy. Low defense makes it easy to kill, but must be stopped with CC before it approaches ranged heroes.","速い遠距離 host の敵。防御力が低く倒すのは容易だが、遠距離英雄に接近する前にCCで防がなければならない。"
+monsters.dark_mage.description,"어둠의 마력을 능숙하게 다루는 마법사. 저주와 어둠의 화염으로 아군 전체를 위협한다.","A mage skilled in dark magic. Threatens all allies with curses and dark fire.","闇の魔力を巧みに操る魔道士。呪いと闇の炎で味方全体を脅かす。"
+monsters.dark_mage.displayName,"암흑 마법사",Dark Mage,暗黒の魔道士
+monsters.dark_mage.tip,"원거리 마법 공격으로 방어력을 어느 정도 무시한다. 즉시 처치를 목표로 하라.","Ignores defense to some extent with ranged magic attacks. Aim for immediate elimination.","遠距離魔法攻撃で防御力をある程度無視する。即座の排除を目標にせよ。"
+monsters.death_knight.description,"어둠의 힘에 굴복한 성기사. 일격에 아군을 쓰러뜨릴 만큼 강하고, 죽음의 오라를 두르고 있다.","A paladin who succumbed to the power of darkness. Strong enough to take down an ally in one blow, surrounded by an aura of death.","闇の力に屈した聖騎士。一撃で味方を倒すほど強く、死のオーラをまとっている。"
+monsters.death_knight.displayName,"죽음의 기사",Death Knight,デスナイト
+monsters.death_knight.tip,"강력한 공격과 높은 방어력. 소환 스킬이 있는 영웅이나 CC를 조합해 대응하라.","Powerful attacks and high defense. Counter with heroes that have summon skills or a combination of CC.","強力な攻撃と高い防御力。召喚スキルを持つ英雄やCCを組み合わせて対応せよ。"
+monsters.deathly_marksman.description,"죽어서도 활시위를 당기는 정예 저격수. 살아있을 때보다 정확도가 더 높다고 한다.","An elite sniper who pulls the bowstring even in death. Said to be more accurate than when alive.","死してもなお弓を引く精鋭狙撃手。生きている時よりも精度が高いと言われている。"
+monsters.deathly_marksman.displayName,"죽음의 사수",Deathly Marksman,死の射手
+monsters.deathly_marksman.tip,"높은 공격력의 원거리 정예. 이동 속도가 느려 CC로 묶기 쉽다. 즉시 처치가 최선.","High attack power ranged elite. Slow movement speed makes it easy to lock down with CC. Immediate elimination is best.","高い攻撃力を持つ遠距離の精鋭。移動速度が遅くCCで縛りやすい。即座の排除が最善。"
+monsters.diamond_golem.description,"완벽한 다이아몬드 격자 구조로 이루어진 골렘. 방어력 250으로 사실상 무적에 가깝다.","A golem made of a perfect diamond lattice structure. With 250 defense, it is practically invincible.","完璧なダイヤモンド格子構造で構成されたゴーレム。防御力250で事実上無敵に近い。"
+monsters.diamond_golem.displayName,"다이아 골렘",Diamond Golem,ダイヤモンドゴーレム
+monsters.diamond_golem.tip,"방어력 250! 다단 히트 전문 영웅 없이는 처치 불가능에 가깝다. 다이아 골렘 전용 파티 구성을 고려하라.","Defense 250! Nearly impossible to kill without multi-hit specialized heroes. Consider a dedicated party composition.","防御力250！多段ヒット専門の英雄がいなければ討伐は不可能に近い。専用のパーティ構成を考慮せよ。"
+monsters.dire_wolf.description,"고대 마법에 의해 강화된 늑대. 속도 5.5로 전장에서 가장 빠른 지상 유닛 중 하나다.","A wolf enhanced by ancient magic. One of the fastest ground units on the battlefield with a speed of 5.5.","古代魔法によって強化された狼。速度5.5で戦場で最も速い地上ユニットの一つだ。"
+monsters.dire_wolf.displayName,"다이어 울프",Dire Wolf,ダイアウルフ
+monsters.dire_wolf.tip,"전장에서 가장 빠른 적. CC 없이는 방어선이 무너진다. 빙결/기절 스킬이 필수다.","The fastest enemy on the battlefield. Without CC, the defense line will collapse. Freeze/Stun skills are essential.","戦場で最も速い敵。CCがなければ防衛線が崩壊する。氷結/スタンスキルが必須だ。"
+monsters.fire_lord.description,"화염의 군주. 어픽스: AOE 강타 — 주기적으로 아군 전체에 폭발 피해를 가한다.","The Fire Lord. Affix: AoE Strike — Periodically deals explosion damage to all allies.","炎の君主。アフィックス：AOE強打 — 定期的に味方全体に爆発ダメージを与える。"
+monsters.fire_lord.displayName,"화염 군주",Fire Lord,炎の君主
+monsters.fire_lord.tip,"Wave 15 보스. AOE 강타 판정이 매우 넓다. 힐러가 없으면 불가능에 가까운 전투. CC로 강타를 방해하라.","Wave 15 Boss. AoE strike hitbox is very wide. An almost impossible battle without a healer. Interrupt strikes with CC.","Wave 15 ボス。AOE強打の判定が非常に広い。ヒーラーがいなければ不可能に近い戦闘。CCで強打を妨害せよ。"
+monsters.fire_spirit.description,"불꽃에서 태어난 정령. 방어력이 없고 체력도 낮지만 빠른 속도와 화염 공격이 위협적이다.","A spirit born from flames. No defense and low HP, but its fast speed and fire attacks are threatening.","炎から生まれた精霊。防御力がなく体力も低いが、速い速度と火炎攻撃が脅威だ。"
+monsters.fire_spirit.displayName,"화염 정령",Fire Spirit,火の精霊
+monsters.fire_spirit.tip,"방어력 0이라 처치는 쉽지만 수가 많으면 타워를 빠르게 위협한다. 광역기로 쓸어내라.","Easy to kill with 0 defense, but in large numbers, they quickly threaten the tower. Sweep them with AoE skills.","防御力0なので倒すのは容易だが、数が多いと素早くタワーを脅かす。広域スキルで掃討せよ。"
+monsters.flesh_giant.description,"수천 개의 시체를 뭉쳐 만든 거대한 언데드. HP 15000의 역대 최고 체력. 분노 상태에선 멈출 수 없다.","A giant undead made from thousands of corpses. The highest HP ever at 15000. Unstoppable when enraged.","数千の死体を固めて作った巨大なアンデッド。HP15000の歴代最高体力。激怒状態では止められない。"
+monsters.flesh_giant.displayName,"거대 살덩이",Flesh Giant,肉の巨人
+monsters.flesh_giant.tip,"Wave 40 보스. 체력 15000!! 방어력은 낮지만 체력이 압도적. 힐러 + 처형 스킬이 필수. 지구전 준비를.","Wave 40 Boss. HP 15000!! Low defense but overwhelming HP. Healer + execution skills are essential. Prepare for a battle of attrition.","Wave 40 ボス。体力15000！！防御力は低いが体力が圧倒的。ヒーラー＋処刑スキルが必須。持久戦の準備を。"
+monsters.flesh_hulk.description,"여러 시체를 꿰매어 만든 거대한 괴물. HP 800에 방어력은 없어 강한 한 방에 취약하다.","A giant monster made by stitching together various corpses. HP 800 and no defense, making it vulnerable to strong single hits.","複数の死体を縫い合わせて作った巨大な怪物。HP800で防御力はなく、強力な一撃に弱い。"
+monsters.flesh_hulk.displayName,"살덩이 헐크",Flesh Hulk,肉のハルク
+monsters.flesh_hulk.tip,"체력이 매우 높지만 방어력은 0. 단일 강타 딜러나 처형 스킬로 순식간에 쓰러뜨릴 수 있다.","Very high HP but 0 defense. Can be taken down instantly with a single burst damage dealer or execution skills.","体力が非常に高いが防御力は0。単発アタッカーや処刑スキルで瞬時に倒すことができる。"
+monsters.frost_elemental.description,"극한의 냉기를 품은 정령. 공격마다 광역 슬로우를 부여하며 방어도 철저하다.","A spirit harboring extreme cold. Inflicts AoE slow with every attack and has solid defense.","極限の冷気を抱く精霊。攻撃ごとに広域スロウを付与し、防御も徹底している。"
+monsters.frost_elemental.displayName,"서리 정령",Frost Elemental,霜の精霊
+monsters.frost_elemental.tip,"체력 450, 방어력 35의 고급 정령. 광역 슬로우로 아군 전체가 느려진다. CC 영웅으로 역슬로우하라.","Advanced spirit with 450 HP and 35 defense. AoE slow slows down all allies. Counter-slow with CC heroes.","体力450、防御力35の高級精霊。広域スロウで味方全体が遅くなる。CC英雄で逆スロウをかけろ。"
+monsters.frost_king.description,"영원한 겨울을 지배하는 냉기의 왕. 어픽스: 분노 — 방어력 80으로 물리 공격을 거의 흡수한다.","The king of frost ruling eternal winter. Affix: Rage — Absorbs almost all physical attacks with 80 defense.","永遠の冬を支配する冷気の王。アフィックス：激怒 — 防御力80で物理攻撃をほとんど吸収する。"
+monsters.frost_king.displayName,"냉기 왕",Frost King,氷の王
+monsters.frost_king.tip,"Wave 20 보스. 방어력 80! 마법 딜러나 다단 히트 영웅이 없으면 처치 불가. 분노 전 집중 공략.","Wave 20 Boss. Defense 80! Impossible to kill without magic damage dealers or multi-hit heroes. Focus attack before rage.","Wave 20 ボス。防御力80！魔法アタッカーや多段ヒット英雄がいなければ討伐不可。激怒前に集中攻略。"
+monsters.giant_spider.description,"성인 남성보다 큰 독거미. 속도는 약간 느려졌지만 강인한 외골격이 피해를 줄여준다.","A poisonous spider larger than an adult male. Speed is slightly reduced, but a tough exoskeleton reduces damage.","成人男性より大きな毒グモ。速度はやや遅くなったが、強靭な外骨格がダメージを減らす。"
+monsters.giant_spider.displayName,"거대 거미",Giant Spider,巨大クモ
+monsters.giant_spider.tip,"동굴 거미의 강화형. 높은 체력에 빠른 속도가 위협적이다. CC 우선 후 집중 딜로 처리하라.","Enhanced version of the cave spider. High HP and fast speed are threatening. Prioritize CC then focus damage.","洞窟クモの強化型。高い体力に速い速度が脅威だ。CCを優先して集中攻撃で処理しろ。"
+monsters.goblin.description,"숲 속 쓰레기 더미에서 태어난 듯한 작은 야만족. 개별 위협은 낮지만 무리 지어 방어선을 흐트러뜨린다.","A small barbarian tribe that seems to have been born from a trash heap in the forest. Individually low threat, but they disturb the defense line in groups.","森の中のゴミの山から生まれたような小さな野蛮族。個々の脅威は低いが、群れをなして防衛線を乱す。"
+monsters.goblin.displayName,"고블린",Goblin,ゴブリン
+monsters.goblin.tip,"초반에 등장하는 가장 기본적인 적. 근거리 영웅 1~2명만 있어도 무난히 처리된다. 물량으로 밀어붙이니 광역기를 아끼지 마라.","The most basic enemy that appears in the early stages. Can be easily handled with just 1-2 melee heroes. They push with numbers, so don't hesitate to use AoE skills.","序盤に登場する最も基本的な敵。近距離英雄1〜2人だけでも無難に処理される。物量で押し寄せるので、広域スキルを惜しむな。"
+monsters.goblin_crossbow.description,"장거리 석궁으로 치명적인 볼트를 날린다. 전선 후방에 위치해 아군 원딜을 괴롭힌다.","Fires deadly bolts with a long-range crossbow. Located behind the front lines, harassing allied ranged DPS.","長距離石弓で致命的なボルトを飛ばす. 前線の後方に位置し、味方の遠距離アタッカーを苦しめる。","長距離石弓で致命的なボルトを飛ばす。前線の後方に位置し、味方の遠距離アタッカーを苦しめる。"
+monsters.goblin_crossbow.displayName,"고블린 석궁병",Goblin Crossbowman,ゴブリン石弓兵
+monsters.goblin_crossbow.tip,"원거리 공격력이 상당히 높다. CC 스킬로 묶거나 빠른 원딜 영웅으로 우선 제거하라.","Ranged attack power is quite high. Root them with CC skills or eliminate them first with fast ranged heroes.","遠距離攻撃力がかなり高い。CCスキルで縛るか、素早い遠距離英雄で優先的に排除しろ。"
+monsters.goblin_mutant.description,"알 수 없는 약물로 인해 몸이 비정상적으로 커진 고블린. 빠르고 난폭하며 눈빛이 흐릿하다.","A goblin abnormally enlarged by an unknown drug. Fast, violent, and has a blurry gaze.","未知の薬物により体が異常に大きくなったゴブリン. 速くて乱暴で、目が濁っている。","未知の薬物により体が異常に大きくなったゴブリン。速くて乱暴で、目が濁っている。"
+monsters.goblin_mutant.displayName,"돌연변이 고블린",Goblin Mutant,変異ゴブリン
+monsters.goblin_mutant.tip,"빠른 이동 속도와 높은 체력이 특징. 방어선을 뚫기 전 CC로 발을 묶어야 한다.","Characterized by fast movement speed and high HP. Must be rooted with CC before breaching the defense line.","速い移動速度と高い体力が特徴。防衛線を突破される前にCCで足止めしなければならない。"
+monsters.goblin_sapper.description,"폭발물을 가득 안고 미친 듯이 벽을 향해 돌진하는 자폭 특공대. 영웅은 안중에도 없다. 오직 벽이 목표.","A suicide squad that rushes madly toward the wall with explosives. They don't care about heroes. Their only goal is the wall.","爆発物を抱えて狂ったように壁に向かって突進する自爆特攻隊。英雄は眼中にない。ただ壁が目標。"
+monsters.goblin_sapper.displayName,"고블린 자폭병",Goblin Sapper,ゴブリン自爆兵
+monsters.goblin_sapper.tip,"절대 방치하면 안 된다. 벽에 닿는 순간 최대 체력의 50%를 날려버린다. CC 캐릭터가 최우선으로 스턴을 걸어야 한다.","Must never be left alone. The moment it touches the wall, it blows away 50% of its max HP. CC characters must prioritize stunning it.","絶対に放置してはいけない。壁に触れた瞬間、最大体力の50%を吹き飛ばす。CCキャラクターが最優先でスタンをかけなければならない。"
+monsters.goblin_shaman.description,"원시적인 독 마법을 사용하는 부족 주술사. 독 안개를 뿜어 아군을 서서히 약화시킨다.","A tribal shaman using primitive poison magic. Spews poison mist to slowly weaken allies.","原始敵인 毒 마법을 사용하는 不足 呪術사. 毒 霧를 뿜어 味方을 서서히 약화시킨다.","原始的な毒魔法を使用する部族の呪術師。毒霧を噴いて味方を徐々に弱体化させる。"
+monsters.goblin_shaman.displayName,"고블린 주술사",Goblin Shaman,ゴブリン呪術師
+monsters.goblin_shaman.tip,"원거리 주술 공격으로 힐러에게 부담을 준다. 아군 뒤에서 안전하게 딜하니 우선 처치 대상으로 지정하라.","Ranged spell attacks put a burden on healers. Deals damage safely from behind enemies, so prioritize eliminating it.","遠距離呪術攻撃でヒーラーに負担をかける。敵の後ろから安全に攻撃してくるので、優先排除対象に指定しろ。"
+monsters.goblin_slinger.description,"돌을 던져 원거리 공격을 하는 고블린. 가냘프지만 집단으로 원딜 영웅을 노린다.","A goblin that attacks from a distance by throwing stones. Frail, but targets ranged heroes in groups.","石を投げて遠距離攻撃をするゴブリン。か弱い集団で遠距離英雄を狙う。"
+monsters.goblin_slinger.displayName,"고블린 돌팔매병",Goblin Slinger,ゴブリン投石兵
+monsters.goblin_slinger.tip,"원거리 적. 탱커를 뛰어넘어 후방 영웅을 노리는 패턴에 주의. CC 영웅으로 이동을 막으면 효과적이다.","Ranged enemy. Beware of patterns that jump over tanks to target rear heroes. Effective to block movement with CC heroes.","遠距離の敵。タンクを飛び越えて後方の英雄を狙うパターンに注意。CC英雄で移動を防ぐと効果的だ。"
+monsters.gold_golem.description,"황금으로 빚어진 골렘. 방어력 150으로 전장에서 가장 단단한 존재 중 하나다.","A golem forged from gold. With 150 defense, it is one of the toughest beings on the battlefield.","黄金で作られたゴーレム。防御力150で戦場で最も硬い存在の一つだ。"
+monsters.gold_golem.displayName,"금 골렘",Gold Golem,金ゴーレム
+monsters.gold_golem.tip,"방어력 150! 집중 다단 히트와 방어 무시 시너지가 필수. 시간이 걸려도 꼭 처치하라.","Defense 150! Focused multi-hit and defense-ignoring synergy are essential. Make sure to eliminate it even if it takes time.","防御力150！集中的な多段ヒットと防御無視シナジーが必須。時間がかかっても必ず倒せ。"
+monsters.hobgoblin.description,"고블린보다 덩치가 크고 지능도 높다. 몽둥이 한 방에 웬만한 영웅이 비틀거린다.","Larger and smarter than goblins. A single club swing will make most heroes stagger.","ゴブリンより体が大きく知能も高い。棍棒の一撃で大抵の英雄がよろめく。"
+monsters.hobgoblin.displayName,"홉고블린",Hobgoblin,ホブゴブリン
+monsters.hobgoblin.tip,"고블린의 강화형. 체력과 공격력이 올라갔다. 탱커를 전면에 배치해 어그로를 집중시켜라.","Enhanced version of the goblin. HP and attack power have increased. Place tanks at the front to focus aggro.","ゴブリンの強化型。体力と攻撃力が上がった。タンクを前面に配置してヘイトを集中させろ。"
+monsters.ice_spirit.description,"얼음 결정으로 이루어진 정령. 공격마다 명중한 영웅의 이동 속도를 저하시킨다.","A spirit made of ice crystals. Reduces the movement speed of heroes hit with every attack.","氷の結晶で構成された精霊。攻撃ごとに命中した英雄の移動速度を低下させる。"
+monsters.ice_spirit.displayName,"냉기 정령",Ice Spirit,氷の精霊
+monsters.ice_spirit.tip,"냉기 공격으로 아군 영웅을 슬로우시킨다. 힐러가 슬로우에 걸리면 치료가 늦어지니 주의.","Slows allied heroes with frost attacks. Be careful as healing will be delayed if healers are slowed.","冷気攻撃で味方英雄にスロウをかける。ヒーラーがスロウにかかると回復が遅れるので注意。"
+monsters.iron_golem.description,"용광로에서 직접 주조된 철제 골렘. 방어력 100으로 대부분의 물리 공격을 무효화한다.","An iron golem cast directly from a furnace. Nullifies most physical attacks with 100 defense.","溶鉱炉で直接鋳造された鉄のゴーレム。防御力100でほとんどの物理攻撃を無効化する。"
+monsters.iron_golem.displayName,"철 골렘",Iron Golem,鉄ゴーレム
+monsters.iron_golem.tip,"방어력 100. 일반 물리 딜은 거의 의미 없다. 마법 피해 스킬이나 다단 히트 전문 영웅이 필요하다.","Defense 100. Normal physical damage is almost meaningless. Needs magic damage skills or multi-hit specialized heroes.","防御力100。一般的な物理ダメージはほとんど意味がない。魔法ダメージスキルや多段ヒット専門英雄が必要だ。"
+monsters.lava_elemental.description,"용암이 의지를 얻은 존재. 체력 500에 강력한 화염 타격을 날린다. 근처에만 있어도 뜨겁다.","A being of magma that has gained a will. Delivers powerful fire strikes with 500 HP. Hot just being nearby.","溶岩が意志を得た存在。体力500で強力な火炎打撃を放つ。近くにいるだけでも熱い。"
+monsters.lava_elemental.displayName,"용암 정령",Lava Elemental,溶岩の精霊
+monsters.lava_elemental.tip,"체력 500의 고급 정령. 강한 공격력으로 탱커도 빠르게 무너뜨린다. 힐 지원 필수.","Advanced spirit with 500 HP. Its strong attack power quickly takes down even tanks. Heal support is essential.","体力500の高級精霊。強い攻撃力でタンクも素早く崩す。ヒール支援必須。"
+monsters.lich.description,"불사의 마법으로 스스로를 언데드로 만든 강대한 마법사. 강력한 주문으로 전장 전체를 위협한다.","A mighty mage who turned themselves into an undead through immortal magic. Threatens the entire battlefield with powerful spells.","不死の魔法で自らをアンデッドにした強大な魔道士。強力な呪文で戦場全体を脅かす。"
+monsters.lich.displayName,"리치",Lich,リッチ
+monsters.lich.tip,"매우 높은 체력과 방어력. CC로 이동을 막고 집중 딜로 빠르게 제거하라. 자칫 방치하면 파티가 무너진다.","Very high HP and defense. Block movement with CC and eliminate quickly with focused damage. If left unchecked, the party will collapse.","非常に高い体力と防御力。CCで移動を防ぎ、集中攻撃で素早く排除しろ。放置するとパーティが崩壊する。"
+monsters.lich_king.description,"언데드의 왕. 어픽스: 소환 — 주기적으로 언데드 병사를 소환하고 아군 어그로를 빼앗는다.","King of the undead. Affix: Summon — Periodically summons undead soldiers and steals ally aggro.","アンデッドの王。アフィックス：召喚 — 定期的にアンデッド兵士を召喚し、味方のヘイトを奪う。"
+monsters.lich_king.displayName,"리치 군주",Lich King,リッチキング
+monsters.lich_king.tip,"Wave 10 보스. 소환된 언데드가 탱커 어그로를 분산시킨다. 광역기로 소환수를 빠르게 제거하라.","Wave 10 Boss. Summoned undead disperse tank aggro. Eliminate summons quickly with AoE skills.","Wave 10 ボス。召喚されたアンデッドがタンクのヘイトを分散させる。広域スキルで召喚獣を素早く排除しろ。"
+monsters.lightning_spirit.description,"전기 에너지가 응집된 정령. 빠른 속도로 접근해 번개로 공격하며 근처 아군에게도 감전 피해를 준다.","A spirit made of condensed electrical energy. Approaches quickly, attacks with lightning, and deals shock damage to nearby allies.","電気エネルギーが凝縮された精霊。速い速度で接近して雷で攻撃し、近くの味方にも感電ダメージを与える。"
+monsters.lightning_spirit.displayName,"번개 정령",Lightning Spirit,雷の精霊
+monsters.lightning_spirit.tip,"원거리 번개 공격. 방어력 0으로 처치는 쉽다. 빠른 속도로 원딜 영웅을 노리는 패턴을 주의.","Ranged lightning attacks. Easy to kill with 0 defense. Beware of its pattern of targeting ranged heroes with fast speed.","遠距離の雷攻撃。防御力0で倒すのは容易。速い速度で遠距離英雄を狙うパターンに注意。"
+monsters.magma_hurler.description,"내부에 용암이 흐르는 골렘. 던지는 용암 덩어리가 땅에 닿으면 화염 웅덩이를 만든다.","A golem with magma flowing inside. Throws magma chunks that create fire pools upon hitting the ground.","内部に溶岩が流れるゴーレム。投げる溶岩の塊が地面に触れると炎の水たまりを作る。"
+monsters.magma_hurler.displayName,"용암 투척 골렘",Magma Hurler,マグマ投げゴーレム
+monsters.magma_hurler.tip,"방어력 80의 원거리 골렘. 용암 투척은 주변 영웅에게도 피해를 줄 수 있다. 다단 히트가 핵심.","Ranged golem with 80 defense. Magma throws can also damage nearby heroes. Multi-hit is key.","防御力80の遠距離ゴーレム。溶岩投げは周囲の英雄にもダメージを与える可能性がある。多段ヒットが鍵。"
+monsters.necromancer.description,"죽은 자를 소환하는 강력한 마법사. 배후에서 지원하며 언데드 군세를 불린다.","A powerful mage who summons the dead. Supports from behind and swells the undead army.","死者を召喚する強力な魔道士。背後から支援し、アンデッドの軍勢を増やす。"
+monsters.necromancer.displayName,"네크로맨서",Necromancer,死霊術師
+monsters.necromancer.tip,"방치하면 주변에 언데드가 계속 소환된다. 원거리 딜러로 최우선 제거하라.","If left alone, undead will constantly be summoned around it. Prioritize elimination with ranged damage dealers.","放置すると周囲にアンデッドが召喚され続ける。遠距離アタッカーで最優先で排除しろ。"
+monsters.orc_grunt.description,"전쟁에 길들여진 오크 보병. 체력과 방어력을 겸비한 균형 잡힌 강적.","A war-trained Orc infantryman. A well-balanced strong enemy with both HP and defense.","戦争に飼いならされたオーク歩兵。体力と防御力を兼ね備えたバランスの取れた強敵。"
+monsters.orc_grunt.displayName,"오크 돌격병",Orc Grunt,オーク歩兵
+monsters.orc_grunt.tip,"체력 400, 방어력 25의 균형형. 탱커 1명이 막기엔 벅차다. 소환수로 어그로를 분산하라.","A balanced type with 400 HP and 25 defense. Hard for 1 tank to block. Disperse aggro with summons.","体力400、防御力25のバランス型。タンク1人で防ぐのは厳しい。召喚獣でヘイトを分散させろ。"
+monsters.orc_shaman.description,"부족의 주술사. 번개 주문과 독 안개로 아군을 지원하며 원거리에서 안전하게 활동한다.","Tribal shaman. Supports allies with lightning spells and poison mist, operating safely from a distance.","部族の呪術師。雷の呪文と毒霧で味方を支援し、遠距離から安全に活動する。"
+monsters.orc_shaman.displayName,"오크 주술사",Orc Shaman,オーク呪術師
+monsters.orc_shaman.tip,"오크 돌격병 뒤에 숨어 안전하게 딜한다. 주술사부터 처치해야 아군 피해를 줄일 수 있다.","Deals damage safely hiding behind Orc grunts. Must kill the shaman first to reduce ally damage.","オーク歩兵の後ろに隠れて安全に攻撃する。呪術師から倒さなければ味方の被害を減らせない。"
+monsters.orc_warrior.description,"수십 번의 전투에서 살아남은 오크 정예 전사. 체력 700에 강력한 일격은 탱커도 금방 쓰러뜨린다.","An elite Orc warrior who survived dozens of battles. With 700 HP, its powerful strike can quickly take down a tank.","数十回の戦闘を生き延びたオークの精鋭戦士。体力700の強力な一撃はタンクもすぐに倒す。"
+monsters.orc_warrior.displayName,"오크 전사",Orc Warrior,オーク戦士
+monsters.orc_warrior.tip,"체력 700, 방어력 40의 강력한 근접 적. 탱커 2명이 필요할 수 있다. 힐러 지원을 아끼지 마라.","A strong melee enemy with 700 HP and 40 defense. May require 2 tanks. Do not spare healer support.","体力700、防御力40の強力な近接敵。タンク2人が必要になるかもしれない。ヒーラーの支援を惜しむな。"
+monsters.plague_beast.description,"역병으로 인해 변이된 거대 언데드. HP 2500, 접근 시 역병 구름으로 아군 HP를 갉아먹는다.","A giant undead mutated by plague. HP 2500, eats away ally HP with plague clouds upon approach.","疫病により変異した巨大なアンデッド。HP2500、接近時に疫病の雲で味方のHPを削る。"
+monsters.plague_beast.displayName,"역병 괴수",Plague Beast,疫病獣
+monsters.plague_beast.tip,"체력 2500! 아군 전체 화력을 집중하라. 힐러가 없으면 역병 피해로 파티 전체가 쓰러진다.","HP 2500! Focus the entire party's firepower. Without healers, the entire party will fall to plague damage.","体力2500！味方全体の火力を集中させろ。ヒーラーがいなければ疫病ダメージでパーティ全体が倒れる。"
+monsters.plague_mage.description,"역병을 마법으로 조율하는 어둠의 마법사. 원거리에서 역병을 퍼뜨려 아군을 서서히 죽게 만든다.","A dark mage who tunes plague with magic. Spreads plague from a distance to slowly kill allies.","疫病を魔法で操る闇の魔道士。遠距離から疫病を広め、味方を徐々に死に至らしめる。"
+monsters.plague_mage.displayName,"역병 마법사",Plague Mage,疫病の魔道士
+monsters.plague_mage.tip,"역병 공격으로 지속 피해를 준다. 힐러 부담이 극도로 증가하니 다른 적보다 우선 처치하라.","Deals continuous damage with plague attacks. Extreme burden on healers, so prioritize killing it over other enemies.","疫病攻撃で持続ダメージを与える。ヒーラーの負担が極端に増加するので、他の敵よりも優先して倒せ。"
+monsters.poison_spirit.description,"독기가 응집된 정령. 접촉만으로도 중독을 유발하며 천천히 모든 아군 영웅의 체력을 갉아먹는다.","A spirit of condensed miasma. Causes poisoning just by contact and slowly eats away the health of all allied heroes.","毒気が凝縮された精霊。接触するだけで中毒を引き起こし、ゆっくりとすべての味方英雄の 体力을 갉아먹는다.","毒気が凝縮された精霊。接触するだけで中毒を引き起こし、ゆっくりとすべての味方英雄の体力を削る。"
+monsters.poison_spirit.displayName,"독 정령",Poison Spirit,毒の精霊
+monsters.poison_spirit.tip,"독 오라로 근처 아군이 지속 피해를 받는다. 힐러의 부담이 급증하니 빠르게 처치하라.","Nearby allies take continuous damage from the poison aura. Healer burden skyrockets, so kill it quickly.","毒オーラで近くの味方が持続ダメージを受ける。ヒーラーの負担が急増するので素早く倒せ。"
+monsters.rock_hurler.description,"바위를 집어 던지는 골렘. 원거리에서 돌을 투척해 방어선 뒤쪽까지 피해를 준다.","A golem that picks up and throws rocks. Throws stones from a distance, damaging behind the defense line.","岩を拾って投げるゴーレム。遠距離から石を投擲し、防衛線の後方までダメージを与える。"
+monsters.rock_hurler.displayName,"바위 투척 골렘",Rock Hurler,岩投げゴーレム
+monsters.rock_hurler.tip,"원거리 고방어 골렘. 다중 타격 스킬이 필수. 이동이 느려 방어선 형성에 여유가 있다.","Ranged high-defense golem. Multi-hit skills are essential. Slow movement gives leeway to form a defense line.","遠距離の高防御ゴーレム。多段ヒットスキルが必須。移動が遅く防衛線形成に余裕がある。"
+monsters.sapper_commander.description,"자폭 부대를 이끄는 광기 넘치는 지휘관. 자신도 폭탄을 짊어지고 돌진하며 부하들을 소환한다.","A mad commander leading the suicide squad. Charges carrying bombs himself and summons subordinates.","自爆部隊を率いる狂気に満ちた指揮官。自身も爆弾を背負って突進し、部下を召喚する。"
+monsters.sapper_commander.displayName,"자폭 지휘관",Sapper Commander,自爆指揮官
+monsters.sapper_commander.tip,"보스 자신도 자폭병이라 벽에 닿으면 대량의 피해를 준다. 광폭화 전에 CC를 집중시키고 빠르게 제거하라.","The boss itself is a suicide bomber, dealing massive damage upon touching the wall. Focus CC and kill quickly before enrage.","ボス自身も自爆兵であり、壁に触れた瞬間、大量のダメージを与える。狂暴化前にCCを集中させて素早く排除しろ。"
+monsters.shadow_stalker.description,"어둠 속에서 은신하다 기습하는 암살자. 속도 4.0으로 아군 뒤쪽 원딜·힐러를 노린다.","An assassin who stealths in the darkness and ambushes. Targets ranged DPS/healers in the rear at a speed of 4.0.","闇の中で隠密行動し奇襲する暗殺者。速度4.0で味方の後方の遠距離アタッカー・ヒーラーを狙う。"
+monsters.shadow_stalker.displayName,"그림자 침략자",Shadow Stalker,影の追跡者
+monsters.shadow_stalker.tip,"빠른 속도로 취약한 영웅을 노린다. CC 영웅이 필수. 암살당하기 전에 먼저 눈으로 추적하라.","Targets vulnerable heroes at high speed. CC heroes are essential. Track it with your eyes before getting assassinated.","速い速度で脆弱な英雄を狙う。CC英雄が必須。暗殺される前にまず目で追跡しろ。"
+monsters.skeleton.description,"마법으로 소환된 최하급 언데드. 뼈만 남은 몸이지만 검을 휘두르는 본능은 살아있다.","The lowest tier undead summoned by magic. A body of just bones, but the instinct to swing a sword remains.","魔法で召喚された最下級のアンデッド。骨だけの体だが、剣を振るう本能は生きている。"
+monsters.skeleton.displayName,"해골 병사",Skeleton,スケルトン
+monsters.skeleton.tip,"고블린과 함께 초반에 등장하는 기본 근접 적. 어떤 영웅이든 무난히 처리 가능하다.","A basic melee enemy appearing early alongside goblins. Any hero can handle them easily.","ゴブリンと共に序盤に登場する基本的な近接敵。どの英雄でも無難に処理可能だ。"
+monsters.skeleton_archer.description,"활 솜씨를 기억하는 해골 병사. 수풀 너머에서 날아오는 화살에 아군이 속수무책으로 쓰러진다.","A skeleton soldier remembering its archery skills. Allies fall helplessly to arrows flying from beyond the bushes.","弓の腕前を覚えている骸骨兵士。茂みの向こうから飛んでくる矢に味方がなすすべもなく倒れる。"
+monsters.skeleton_archer.displayName,"해골 궁수",Skeleton Archer,スケルトン射手
+monsters.skeleton_archer.tip,"원거리 초반 적. CC 또는 원딜 영웅으로 전열 영웅 뒤의 해골 궁수를 노려라.","Early game ranged enemy. Target the skeleton archer behind the frontlines with CC or ranged DPS heroes.","遠距離の序盤の敵。CCまたは遠距離英雄で前列の英雄の後ろにいるスケルトン射手を狙え。"
+monsters.skull_knight.description,"기사의 기억과 투지를 간직한 고급 언데드. 중장 갑옷 파편 위로 이상한 기운이 맴돈다.","An advanced undead retaining the memories and fighting spirit of a knight. Strange energy hovers over heavy armor fragments.","騎士の記憶と闘志を秘めた高級アンデッド。重装甲の破片の上に奇妙なオーラが漂う。"
+monsters.skull_knight.displayName,"스컬 나이트",Skull Knight,スカルナイト
+monsters.skull_knight.tip,"방어력과 체력을 겸비한 중급 근접 적. 탱커로 어그로를 유지하면서 딜러로 꾸준히 공략하라.","A mid-tier melee enemy with both defense and HP. Maintain aggro with tanks and consistently attack with damage dealers.","防御力と体力を兼ね備えた中級の近接敵。タンクでヘイトを維持しながらアタッカーで着実に攻略しろ。"
+monsters.sniper.description,"사망의 세계에서 더욱 예리해진 저격의 달인. 단 한 발로 아군 핵심 영웅을 쓰러뜨린다.","A master sniper sharper than ever in the world of death. Takes down a core ally hero with a single shot.","死の世界でさらに鋭くなった狙撃の達人。たった一発で味方の中核英雄を倒す。"
+monsters.sniper.displayName,"정예 저격수",Elite Sniper,精鋭狙撃手
+monsters.sniper.tip,"빠른 속도와 높은 딜 조합이 위협적이다. 탱커로 어그로를 잡아 원딜·힐러를 보호하라.","The combination of fast speed and high damage is threatening. Grab aggro with tanks to protect ranged DPS/healers.","速い速度と高い火力の組み合わせが脅威だ。タンクでヘイトを集め、遠距離アタッカー・ヒーラーを保護しろ。"
+monsters.stone_golem.description,"산에서 깎아낸 거대한 돌로 만들어진 골렘. 일반 무기로는 거의 흠집도 내지 못한다.","A golem made from giant stones carved from a mountain. Normal weapons can barely scratch it.","山から切り出した巨大な石で作られたゴーレム。通常の武器ではほとんど傷もつけられない。"
+monsters.stone_golem.displayName,"돌 골렘",Stone Golem,石のゴーレム
+monsters.stone_golem.tip,"방어력 60! 단순 공격은 최소 피해만 입힌다. 다단 히트 스킬 또는 방어 무시 시너지를 활용하라.","Defense 60! Simple attacks deal minimal damage. Utilize multi-hit skills or defense-ignoring synergy.","防御力60！単調な攻撃は最小限のダメージしか与えられない。多段ヒットスキルや防御無視シナジーを活用しろ。"
+monsters.storm_elemental.description,"폭풍과 번개를 지휘하는 정령. 원거리에서 연쇄 번개로 여러 아군에게 동시 피해를 준다.","A spirit commanding storms and lightning. Deals simultaneous damage to multiple allies from a distance with chain lightning.","嵐と雷を指揮する精霊。遠距離から連鎖稲妻で複数の味方に同時にダメージを与える。"
+monsters.storm_elemental.displayName,"폭풍 정령",Storm Elemental,嵐の精霊
+monsters.storm_elemental.tip,"연쇄 번개로 여러 영웅에게 동시 피해. 파티 내 방어력 높은 영웅이 앞에 서야 피해를 분산할 수 있다.","Simultaneous damage to multiple heroes with chain lightning. Heroes with high defense in the party must stand in front to disperse damage.","連鎖稲妻で複数の英雄に同時ダメージ。パーティ内の防御力が高い英雄が前に立たなければダメージを分散できない。"
+monsters.thunder_tyrant.description,"번개와 폭풍을 지배하는 압도적인 존재. 어픽스: AOE 강타 — 번개 폭풍을 일으켜 전장을 초토화.","An overwhelming presence ruling lightning and storms. Affix: AoE Strike — Devastates the battlefield by causing a lightning storm.","雷と嵐を支配する圧倒的な存在。アフィックス：AOE強打 — 雷雨を起こして戦場を焦土化。"
+monsters.thunder_tyrant.displayName,"폭풍 폭군",Storm Tyrant,嵐の暴君
+monsters.thunder_tyrant.tip,"Wave 35 보스. 빠른 속도와 원거리 공격 조합. AOE 강타의 범위가 매우 넓다. 힐러 2명 이상을 준비하라.","Wave 35 Boss. Fast speed and ranged attack combo. AoE strike range is very wide. Prepare 2 or more healers.","Wave 35 ボス。速い速度と遠距離攻撃の組み合わせ。AOE強打の範囲が非常に広い。ヒーラーを2人以上準備しろ。"
+monsters.titanium_golem.description,"전장 역사상 가장 단단한 존재. HP 1500에 방어력 400. 어픽스: AOE 강타로 지진을 일으킨다.","The toughest being in battlefield history. HP 1500, Defense 400. Affix: AoE Strike causes an earthquake.","戦場の歴史上最も硬い存在。HP1500に防御力400。アフィックス：AOE強打で地震を起こす。"
+monsters.titanium_golem.displayName,"티타늄 골렘",Titanium Golem,チタニウムゴーレム
+monsters.titanium_golem.tip,"Wave 25 보스. 방어력 400!!! 다단 히트 전문 영웅 없이는 처치 불가. 파티 전체에 다단 히트 스킬이 필요하다.","Wave 25 Boss. Defense 400!!! Impossible to kill without multi-hit specialized heroes. The whole party needs multi-hit skills.","Wave 25 ボス。防御力400！！！多段ヒット専門英雄がいなければ討伐不可。パーティ全体に多段ヒットスキルが必要だ。"
+monsters.troll_shaman.description,"고대 주술로 아군 트롤을 치유하고 강화하는 주술사. 전장 후방에서 전투를 조율한다.","A shaman who heals and buffs ally trolls with ancient spells. Coordinates the battle from the rear of the battlefield.","古代の呪術で味方のトロールを癒やし強化する呪術師。戦場後方から戦闘を調整する。"
+monsters.troll_shaman.displayName,"트롤 주술사",Troll Shaman,トロール呪術師
+monsters.troll_shaman.tip,"원거리에서 아군 트롤을 힐하고 강화한다. 즉시 처치가 최선. CC로 묶고 집중 딜하라.","Heals and buffs ally trolls from a distance. Immediate kill is top priority. Root with CC and focus damage.","遠距離から味方のトロールを回復し強化する。即時排除が最優先。CCで縛り集中攻撃しろ。"
+monsters.troll_warlord.description,"트롤 부족의 최고 지도자. 어픽스: 분노 — HP가 30% 이하가 되면 공격력이 2배로 증가한다.","The supreme leader of the troll tribe. Affix: Rage — Attack power increases by 2 times when HP falls below 30%.","トロール部族の最高指導者。アフィックス：激怒 — HPが30%以下になると攻撃力が2倍に増加する。"
+monsters.troll_warlord.displayName,"트롤 전쟁군주",Troll Warlord,トロール戦争君主
+monsters.troll_warlord.tip,"Wave 5 보스. 분노 전환 전에 빠르게 HP를 낮춰야 한다. 힐러와 CC가 없으면 분노 상태에서 탱커도 순식간에 쓰러진다.","Wave 5 Boss. Lower HP quickly before rage phase. Without healers and CC, even tanks will fall instantly in rage state.","Wave 5 ボス。激怒状態になる前に素早くHPを減らさなければならない。ヒーラーとCCがなければ、激怒状態でタンクも一瞬で倒れる。"
+monsters.troll_warrior.description,"재생 능력을 가진 트롤 전사. 체력 900에 방어력 35, 죽이는 데 집중적인 화력이 필요하다.","A troll warrior with regenerative abilities. HP 900, Defense 35, requires focused firepower to kill.","再生能力を持つトロール戦士。体力900、防御力35、倒すためには集中的な火力が必要だ。"
+monsters.troll_warrior.displayName,"트롤 전사",Troll Warrior,トロール戦士
+monsters.troll_warrior.tip,"체력 900! 재생력이 있어 딜이 끊기면 회복될 수 있다. 집중 화력으로 끊임없이 공격하라.","HP 900! With regeneration, it can heal if damage stops. Attack relentlessly with focused firepower.","体力900！再生力があり、ダメージが途切れると回復する可能性がある。集中火力で絶え間なく攻撃しろ。"
+monsters.venom_spider.description,"독낭이 부풀어 오른 거미. 원거리에서 독 실을 뱉어 아군을 독에 중독시킨다.","A spider with swollen poison sacs. Spits poison thread from a distance to poison allies.","毒嚢が膨れ上がったクモ。遠距離から毒の糸を吐き味方を毒に感染させる。"
+monsters.venom_spider.displayName,"독 거미",Venom Spider,毒クモ
+monsters.venom_spider.tip,"원거리 독 공격으로 힐러 부담을 증가시킨다. 야수 계열은 원딜보다 근딜로 처리가 빠르다.","Increases healer burden with ranged poison attacks. Beast types are processed faster with melee rather than ranged DPS.","遠距離の毒攻撃でヒーラーの負担を増加させる。野獣系は遠距離より近接アタッカーで処理する方が早い。"
+monsters.void_crawler.description,"공허 차원에서 기어 나온 거미 형태의 존재. 체력 400에 빠른 속도로 탱커를 뚫고 들어온다.","A spider-like being crawling out of the void dimension. HP 400, breaches tanks at fast speed.","虚空の次元から這い出てきたクモ型の存在。体力400で速い速度でタンクを突破してくる。"
+monsters.void_crawler.displayName,"공허 추적자",Void Crawler,ヴォイドクローラー
+monsters.void_crawler.tip,"체력 400의 고속 근접 적. 탱커가 어그로를 유지하기 어렵다. CC와 소환수를 함께 활용하라.","High-speed melee enemy with 400 HP. Hard for tanks to maintain aggro. Utilize CC and summons together.","体力400の高速近接敵。タンクがヘイトを維持しにくい。CCと召喚獣を一緒に活用しろ。"
+monsters.void_dragon.description,"공허에서 깨어난 드래곤. HP 10000에 방어력 80, 원거리 공허 브레스와 AOE 강타를 함께 사용한다.","A dragon awakened from the void. HP 10000, Defense 80. Uses both ranged void breath and AoE strike.","虚空から目覚めたドラゴン。HP10000、防御力80、遠距離の虚空のブレスとAOE強打を併用する。"
+monsters.void_dragon.displayName,"공허 드래곤",Void Dragon,ヴォイドドラゴン
+monsters.void_dragon.tip,"Wave 45+ 보스. 공허 드래곤은 모든 전략이 필요한 최종 보스. 탱커-힐러-딜러 완벽한 균형 파티만이 상대할 수 있다.","Wave 45+ Boss. The Void Dragon is the final boss requiring all strategies. Only a perfectly balanced Tank-Healer-DPS party can face it.","Wave 45+ ボス。虚空のドラゴンはすべての戦略が必要な最終ボス。タンク・ヒーラー・アタッカー host の完璧なバランスのパーティだけが相対できる。"
+monsters.void_spirit.description,"현실 너머 공허에서 온 존재. 원거리 공허 광선으로 방어력을 무시하는 순수 마법 피해를 준다.","A being from the void beyond reality. Deals pure magic damage ignoring defense with ranged void beams.","現実の向こうの虚空から来た存在。遠距離の虚空光線で防御力を無視する純粋な魔法ダメージを与える。"
+monsters.void_spirit.displayName,"공허 정령",Void Spirit,ヴォイドスピリット
+monsters.void_spirit.tip,"공허 공격은 방어력을 무시한다. 체력이 많은 탱커를 전면에 세우고 힐러를 항상 대기시켜라.","Void attacks ignore defense. Place high HP tanks at the front and keep healers always on standby.","虚空の攻撃は防御力を無視する。体力の多いタンクを前面に立て、ヒーラーを常に待機させろ。"
+monsters.void_walker.description,"공허 차원과 현실 세계를 넘나드는 존재. 어픽스: 분노 — HP 5000에 방어력 무시 공격.","A being traversing the void dimension and reality. Affix: Rage — Defense-ignoring attacks with 5000 HP.","虚空次元と現実世界を行き来する存在。アフィックス：激怒 — HP5000で防御力無視の攻撃。"
+monsters.void_walker.displayName,"공허의 보행자",Void Walker,ヴォイドウォーカー
+monsters.void_walker.tip,"Wave 30 보스. 체력 5000! 분노 전환이 빠르다. 고딜 원거리 파티로 최단 시간 내 처치가 최선.","Wave 30 Boss. HP 5000! Quick enrage transition. Best to kill in the shortest time with high damage ranged party.","Wave 30 ボス。体力5000！激怒への移行が早い。高火力の遠距離パーティで最短時間内に倒すのが最善。"
+monsters.war_skeleton.description,"전쟁터에서 쓰러진 병사의 혼이 갑옷 채 깨어났다. 실력은 살아있던 때와 다름없다.","The soul of a fallen soldier awakened in armor. Its skills are no different from when it was alive.","戦場で倒れた兵士の魂が鎧ごと目覚めた。実力は生きていた時と変わらない。"
+monsters.war_skeleton.displayName,"전쟁 해골",War Skeleton,戦骨兵
+monsters.war_skeleton.tip,"기본 해골보다 체력과 공격력이 높다. 일반 해골 물량 사이에 섞여 탱커를 지치게 하니 우선 제거하라.","Higher HP and attack power than basic skeletons. Mixes in with normal skeleton swarms to exhaust tanks, so eliminate them first.","基本の骸骨より体力と攻撃力が高い。一般の骸骨の群れに混ざってタンクを疲弊させるので優先して排除しろ。"
+monsters.wind_spirit.description,"바람 자체가 의지를 가진 존재. 속도 6.0으로 전장에서 가장 빠른 적이다.","Wind itself gaining a will. The fastest enemy on the battlefield with a speed of 6.0.","風自体が意志を持った存在。速度6.0で戦場で最も速い敵だ。"
+monsters.wind_spirit.displayName,"바람 정령",Wind Spirit,風の精霊
+monsters.wind_spirit.tip,"속도 6.0! 탱커를 무시하고 타워로 직행할 수 있다. CC 필수. 빙결 스킬이 없으면 막기 어렵다.","Speed 6.0! Can ignore tanks and go straight to the tower. CC is essential. Hard to stop without freeze skills.","速度6.0！タンクを無視してタワーに直行する可能性がある。CC必須。氷結スキルがなければ防ぐのは難しい。"
+monsters.wolf.description,"무리 지어 달리는 야생 늑대. 속도 5.0의 맹수. 무리가 합쳐지면 어떤 방어선도 뚫는다.","Wild wolves running in packs. Beasts with a speed of 5.0. When packs merge, they break any defense line.","群れをなして走る野生の狼。速度5.0の猛獣。群れが合わさるとどんな防衛線も突破する。"
+monsters.wolf.displayName,"늑대",Wolf,狼
+monsters.wolf.tip,"빠른 속도와 물량. CC + 광역기로 초반에 집단을 쓸어내라. 개별 처리는 느리다.","Fast speed and numbers. Sweep the group early with CC + AoE. Individual processing is slow.","速い速度と物量。CC＋広域スキルで序盤に集団を掃討しろ。個別の処理は遅い。"
+monsters.wood_golem.description,"나무가 마법으로 깨어난 원시적인 골렘. 체력은 낮지만 단단한 외피가 일격의 피해를 막아낸다.","A primitive golem of wood awakened by magic. Low HP, but a hard exterior blocks burst damage.","木が魔法で目覚めた原始的なゴーレム。体力は低いが、硬い外皮が一撃のダメージを防ぐ。"
+monsters.wood_golem.displayName,"나무 골렘",Wood Golem,木のゴーレム
+monsters.wood_golem.tip,"골렘 계열의 핵심: 체력은 낮고 방어력은 매우 높다. 다중 타격 스킬이나 방어 무시 스킬로 공략하라.","Core of golem types: Low HP and very high defense. Attack with multi-hit skills or defense-ignoring skills.","ゴーレム系の核心：体力は低く防御力が非常に高い。多段ヒットスキルや防御無視スキルで攻略しろ。"

@@ -1,0 +1,107 @@
+services:
+  # Nginx Reverse Proxy (HTTPS)
+  nginx:
+    image: nginx:alpine
+    container_name: ft_trans_nginx
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - app-network
+
+  # PostgreSQL Database
+  db:
+    image: postgres:16-alpine
+    container_name: ft_trans_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    # ports 제거: 외부 직접 접근 차단, app-network 내부에서만 접근
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # NestJS Backend
+  backend:
+    container_name: ft_trans_backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB}
+      JWT_SECRET: ${JWT_SECRET}
+      NODE_ENV: ${NODE_ENV:-development}
+      BACKEND_PORT: ${BACKEND_PORT:-3000}
+    # ports 제거: Nginx를 통해서만 접근, 외부 HTTP 직접 접근 차단
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+      - backup_data:/backups:ro
+
+  # Automated Database Backup (daily at 02:00, keeps 7 days)
+  backup:
+    image: postgres:16-alpine
+    container_name: ft_trans_backup
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - backup_data:/backups
+      - ./database/backup.sh:/backup.sh:ro
+      - ./database/restore.sh:/restore.sh:ro
+    command: >
+      sh -c "
+        chmod +x /backup.sh /restore.sh &&
+        echo '0 2 * * * /backup.sh >> /backups/backup.log 2>&1' | crontab - &&
+        echo '[backup] Scheduler started. Daily backup at 02:00.' &&
+        crond -f -d 8
+      "
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  # React Frontend (프로덕션 빌드 — nginx 정적 서버)
+  frontend:
+    container_name: ft_trans_frontend
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+  backup_data:
+
+networks:
+  app-network:
+    driver: bridge

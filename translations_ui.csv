@@ -1,0 +1,516 @@
+shop.title,영웅 상점,Hero Shop,英雄ショップ
+shop.subtitle,"영웅을 영입하거나 방어선을 강화하고, 크리스탈 상품을 구매하세요.","Recruit heroes, strengthen defenses, and purchase crystal items.","英雄を雇ったり、防衛線を強化したり、クリスタル商品を購入したりできます。"
+shop.tab.gold,영웅 영입 (Gold),Recruit Heroes (Gold),英雄雇用 (Gold)
+shop.tab.wall,벽 강화 상점 (Talents),Wall Upgrade (Talents),壁強化ショップ (Talents)
+shop.tab.crystal,크리스탈 상점 (Crystal),Crystal Shop (Crystal),クリスタルショップ (Crystal)
+shop.tab.manghongu,🔮 망혼구 (亡魂球),🔮 Soul Orb (亡魂球),🔮 亡魂球
+shop.searchPlaceholder,"영웅 이름, 종족(오크), 원소(화염) 검색...","Search name, race(orc), element(fire)...","英雄の名前、種族（オーク）、属性（火炎）で検索..."
+shop.filter.allRoles,전체 역할,All Roles,すべての役割
+shop.filter.allGrades,전체 등급,All Grades,すべてのランク
+shop.currency.owned,보유 재화,Owned Currency,所持財貨
+shop.summon.title,⚡ 영웅 소환,⚡ Summon Hero,⚡ 英雄召喚
+shop.summon.desc,랜덤한 영웅을 획득합니다. 이미 보유 중이면 골드로 반환됩니다.,Obtain a random hero. Refunded in gold if already owned.,ランダムな英雄を獲得します。既に所持している場合はゴールドで返却されます。
+shop.summon.r,R 등급 영웅 소환,Summon R Grade Hero,Rランク英雄召喚
+shop.summon.sr,SR 등급 영웅 소환,Summon SR Grade Hero,SRランク英雄召喚
+shop.summon.ssr,SSR 등급 영웅 소환,Summon SSR Grade Hero,SSRランク英雄召喚
+shop.summon.rDesc,"일반 등급 영웅 중 1명을 무작위로 소환합니다.","Summons 1 random Normal grade hero.","一般ランクの英雄から1人をランダムに召喚します。"
+shop.summon.srDesc,"희귀 등급 영웅 중 1명을 무작위로 소환합니다.","Summons 1 random Rare grade hero.","希少ランクの英雄から1人をランダムに召喚します。"
+shop.summon.ssrDesc,"전설 등급 영웅 중 1명을 무작위로 소환합니다.","Summons 1 random Legendary grade hero.","伝説ランクの英雄から1人をランダムに召喚します。"
+shop.exchange.title,💰 골드 교환,💰 Exchange Gold,💰 ゴールド交換
+shop.exchange.desc,크리스탈을 골드로 환전합니다. 대량 구매일수록 보너스가 늘어납니다.,Exchange crystals for gold. Bulk purchases grant more bonuses.,クリスタルをゴールドに換金します。大量購入ほどボーナスが増えます。
+shop.exchange.s,골드 꾸러미 (소),Small Gold Pouch,ゴールドの袋（小）
+shop.exchange.m,골드 꾸러미 (중),Medium Gold Pouch,ゴールドの袋（中）
+shop.exchange.l,골드 꾸러미 (대),Large Gold Pouch,ゴールドの袋（大）
+shop.exchange.xl,골드 꾸러미 (특대),Extra Large Gold Pouch,ゴールドの袋（特大）
+shop.exchange.xxl,골드 꾸러미 (거대),Giant Gold Pouch,ゴールドの袋（巨大）
+shop.charge.title,💳 크리스탈 충전,💳 Charge Crystals,💳 クリスタルチャージ
+shop.charge.testNotice,(테스트용 기능입니다. 실제 결제되지 않습니다.),(Test feature. No actual payment.),(テスト機能です。実際には決済されません。)
+shop.charge.amount,크리스탈 {count}개,{count} Crystals,クリスタル{count}個
+shop.charge.buy,구매하기,Purchase,購入する
+shop.summon.action,소환,Summon,召喚
+shop.exchange.bestValue,최고 효율,Best Value,最高効率
+achievements.progress,달성 진행도: {unlocked}/{total},Progress: {unlocked}/{total},達成進捗: {unlocked}/{total}
+achievements.reward.ssr,SSR 영웅 보상,SSR Hero Reward,SSR英雄報酬
+achievements.reward.ar,AR 영웅 보상,AR Hero Reward,AR英雄報酬
+achievements.reward.lr,LR 영웅 보상,LR Hero Reward,LR英雄報酬
+roles.tank,탱커,Tank,タンク
+roles.melee_dps,근접딜,Melee DPS,近接ディーラー
+roles.ranged_dps,원거리딜,Ranged DPS,遠距離ディーラー
+roles.healer,힐러,Healer,ヒーラー
+roles.cc,CC,Crowd Control,クラウドコントロール
+roles.mechanic,메카닉,Mechanic,メカニック
+---
+Key,KO,EN,JA
+nav.heroDefense,Hero Defense,Hero Defense,Hero Defense
+nav.dashboard,대시보드,Dashboard,ダッシュボード
+nav.play,플레이,Play,プレイ
+nav.tutorial,튜토리얼,Tutorial,チュートリアル
+nav.lobby,로비,Lobby,ロビー
+nav.aiMatch,AI 대전,AI Match,AI対戦
+nav.heroes,영웅,Heroes,英雄
+nav.shop,상점,Shop,ショップ
+nav.synergy,시너지,Synergy,シナジー
+nav.friends,친구,Friends,フレンド
+nav.achievements,업적,Achievements,実績
+nav.tournament,토너먼트,Tournament,トーナメント
+nav.leaderboard,리더보드,Leaderboard,リーダーボード
+nav.profile,프로필,Profile,プロフィール
+nav.guide,가이드북,Guide,ガイド
+nav.login,로그인,Login,ログイン
+nav.register,회원가입,Register,新規登録
+nav.logout,로그아웃,Logout,ログアウト
+footer.privacyPolicy,개인정보 처리방침,Privacy Policy,プライバシーポリシー
+footer.termsOfService,이용약관,Terms of Service,利用規約
+common.loading,로딩 중...,Loading...,読み込み中...
+common.save,저장,Save,保存
+common.cancel,취소,Cancel,キャンセル
+common.edit,[수정],[Edit],[編集]
+common.level,레벨,Level,レベル
+common.experience,경험치,Experience,経験値
+common.gold,골드,Gold,ゴールド
+common.online,온라인,Online,オンライン
+common.offline,오프라인,Offline,オフライン
+common.status,상태,Status,ステータス
+common.hp,HP,HP,HP
+common.atk,공격,ATK,攻撃
+common.def,방어,DEF,防御
+common.spd,속도,SPD,速度
+login.title,로그인,Login,ログイン
+login.email,이메일,Email,メールアドレス
+login.password,비밀번호,Password,パスワード
+login.loginBtn,로그인,Login,ログイン
+login.loggingIn,로그인 중...,Logging in...,ログイン中...
+login.noAccount,계정이 없으신가요?,Don't have an account?,アカウントをお持ちでない方は
+login.registerLink,회원가입,Register,新規登録
+login.loginFailed,로그인 실패,Login failed,ログインに失敗しました
+login.emailPlaceholder,your@email.com,your@email.com,your@email.com
+login.passwordPlaceholder,비밀번호 입력,Enter password,パスワードを入力
+register.title,계정 만들기,Create Account,アカウント作成
+register.email,이메일,Email,メールアドレス
+register.username,사용자명,Username,ユーザー名
+register.password,비밀번호,Password,パスワード
+register.confirmPassword,비밀번호 확인,Confirm Password,パスワード確認
+register.registerBtn,회원가입,Register,登録
+register.creatingAccount,계정 생성 중...,Creating account...,アカウント作成中...
+register.alreadyHaveAccount,이미 계정이 있으신가요?,Already have an account?,すでにアカウントをお持ちですか？
+register.loginLink,로그인,Login,ログイン
+register.passwordMismatch,비밀번호가 일치하지 않습니다,Passwords do not match,パスワードが一致しません
+register.passwordTooShort,비밀번호는 최소 8자 이상이어야 합니다,Password must be at least 8 characters,パスワードは8文字以上必要です
+register.usernameLengthError,사용자명은 3~20자여야 합니다,Username must be 3-20 characters,ユーザー名は3〜20文字である必要があります
+register.registrationFailed,회원가입 실패,Registration failed,会員登録失敗
+register.emailPlaceholder,your@email.com,your@email.com,your@email.com
+register.usernamePlaceholder,영웅 이름 (3~20자),Hero name (3-20 chars),ヒーロー名（3〜20文字）
+register.passwordPlaceholder,최소 8자 이상,At least 8 characters,最小8文字以上
+register.confirmPlaceholder,비밀번호 재입력,Re-enter password,パスワード再入力
+dashboard.welcome,"환영합니다,","Welcome,",ようこそ、
+dashboard.level,레벨,Level,レベル
+dashboard.exp,경험치,EXP,経験値
+dashboard.gold,골드,Gold,ゴールド
+dashboard.heroes,영웅,Heroes,ヒーロー
+dashboard.playSolo,솔로 플레이,Play Solo,ソロプレイ
+dashboard.playSoloDesc,솔로 방어 게임 시작,Start a solo defense game,ソロ防衛ゲーム開始
+dashboard.multiplayer,멀티플레이,Multiplayer,マルチプレイ
+dashboard.multiplayerDesc,로비 참가 또는 생성,Join or create a lobby,ロビー参加または作成
+dashboard.aiMatch,AI 대전,AI Match,AI対戦
+dashboard.aiMatchDesc,AI와 대결하기,Challenge the AI,AIに挑戦する
+dashboard.tournament,토너먼트,Tournament,トーナメント
+dashboard.tournamentDesc,토너먼트 참가,Compete in brackets,トーナメントに参加
+dashboard.shop,상점,Shop,ショップ
+dashboard.shopDesc,새 영웅 구매,Buy new heroes,新しいヒーローを購入
+dashboard.achievements,업적,Achievements,実績
+dashboard.achievementsDesc,진행도 확인,Track your progress,進捗を確認
+dashboard.friends,친구,Friends,フレンド
+dashboard.friendsDesc,친구 관리,Manage your friends,フレンドを管理
+dashboard.myHeroes,내 영웅,My Heroes,所持ヒーロー
+dashboard.noHeroes,영웅이 없습니다,No heroes yet,ヒーローがいません
+dashboard.noHeroesDesc,곧 상점에서 영웅을 구매할 수 있습니다!,Heroes will be available in the shop soon!,まもなくショップでヒーローが購入できます！
+dashboard.leaderboard,리더보드,Leaderboard,リーダーボード
+dashboard.leaderboardDesc,랭킹 확인,Check rankings,ランキングを確認
+leaderboard.title,리더보드,Leaderboard,リーダーボード
+leaderboard.wave,최고 웨이브,Best Wave,最高ウェーブ
+leaderboard.score,최고 점수,Best Score,最高スコア
+leaderboard.gold,총 골드 획득,Total Gold Earned,総ゴールド獲得
+leaderboard.clears,클리어 수,Clear Count,クリア数
+leaderboard.rank,순위,Rank,順位
+leaderboard.player,플레이어,Player,プレイヤー
+leaderboard.value,기록,Record,記録
+leaderboard.noData,아직 기록이 없습니다. 게임을 플레이해보세요!,No records yet. Play a game!,まだ記録がありません。ゲームをプレイしてみよう！
+leaderboard.myRank,내 순위,My Rank,自分の順位
+leaderboard.waveUnit,웨이브,Wave,ウェーブ
+leaderboard.clearsUnit,회,,回
+shop.title,영웅 상점,Hero Shop,ヒーローショップ
+shop.gold,골드:,Gold:,ゴールド:
+shop.all,전체,All,すべて
+shop.buy,구매,Buy,購入
+shop.owned,보유 중,Owned,所持済み
+shop.buying,구매 중...,Buying...,購入中...
+shop.notEnoughGold,골드가 부족합니다!,Not enough gold!,ゴールドが足りません！
+shop.purchaseFailed,구매 실패,Purchase failed,購入に失敗しました
+shop.noHeroesFilter,해당 필터에 영웅이 없습니다,No heroes found for this filter,このフィルターにヒーローがいません
+achievements.title,업적,Achievements,実績
+achievements.unlocked,달성,Unlocked,達成済み
+achievements.failedToLoad,업적을 불러오지 못했습니다,Failed to load achievements,実績を読み込めませんでした
+achievements.playToEarn,게임을 플레이하여 업적을 달성하세요!,Play a game to start earning achievements!,ゲームをプレイして実績を達成してください！
+achievements.gold,골드,Gold,ゴールド
+achievements.crystal,크리스탈,Crystal,クリスタル
+synergy.title,시너지,Synergy,シナジー
+synergy.subtitle,영웅 시너지,Hero Synergies,英雄シナジー
+synergy.raceTab,종족,Race,種族
+synergy.elementTab,원소,Element,属性
+synergy.activeLabel,활성 시너지,Active Synergies,発動中シナジー
+synergy.activeDesc,현재 팀에서 발동 중인 시너지,Currently active in your team,現在チームで発動中
+synergy.pendingLabel,준비 중,Pending,準備中
+synergy.pendingDesc,영웅을 더 모으면 발동됩니다,Collect more heroes to activate,英雄を増やすと発動します
+synergy.ruleTitle,시너지 규칙,Synergy Rules,シナジールール
+synergy.ruleSummary,같은 종족/원소 영웅을 일정 수 이상 보유하면 강력한 효과가 발동됩니다.,Owning enough heroes of the same race or element triggers powerful effects.,同じ種族/属性の英雄を集めると強力な効果が発動します。
+synergy.dragonNote,(드래곤은 별도 규칙 적용),(Dragons follow separate rules),(ドラゴンは別途ルール適用)
+synergy.activeTag,활성,Active,発動
+synergy.pendingTag,준비중,Pending,準備中
+synergy.memberUnit,명,,体
+synergy.notImplEffect,미구현,Not yet implemented.,未実装
+synergy.noHeroes,영웅 없음,No heroes,英雄なし
+guide.coreMechanics,핵심 메커니즘,Core Mechanics,主要メカニクス
+guide.strategyTip,기본 전략,Basic Strategy,基本戦略
+guide.strategyDesc,"탱커가 전방을 지키고, 딜러는 빠르게 처치하며, 힐러는 아군을 회복시키고, CC와 메카닉이 상황을 제어합니다. 팀 조화가 생존의 열쇠입니다.","Tanks hold the front line, DPS deals damage fast, healers keep allies alive, and CC/Mechanic control the situation. Team synergy is the key to survival.",タンクが前線を守りDPSが素早く敵を倒しヒーラーが味方を回復しCCとメカニックが状況を制御します。チームの連携が生存の鍵です。
+guide.roles.tank.title,탱커 (Tank),Tank,タンク
+guide.roles.tank.desc,"높은 방어력과 체력을 바탕으로 아군의 최전방을 책임집니다. 몬스터들의 어그로를 끌어 대신 피해를 입으며 적들을 한곳으로 모으는 역할을 합니다.","Responsible for the front line with high DEF and HP. They draw monster aggro to take damage and cluster enemies together.","高い防御力と体力で最前線を担当します。モンスターのヘイトを稼ぎ、ダメージを肩代わりして敵を1箇所に集める役割を果たします。"
+guide.roles.melee_dps.title,근접 딜러 (Melee DPS),Melee DPS,近接ディーラー
+guide.roles.melee_dps.desc,"강력한 근접 공격으로 적을 파괴합니다. 탱커 옆에서 보조하거나 강력한 단일 딜링을 담당합니다.","Destroys enemies with powerful close-range attacks. Supports tanks or focuses on high single-target damage.","強力な近接攻撃で敵を粉砕します。タンクをサポートしたり強力な単体攻撃を担当します。"
+guide.roles.ranged_dps.title,원거리 딜러 (Ranged DPS),Ranged DPS,遠距離ディーラー
+guide.roles.ranged_dps.desc,"안전한 거리에서 적에게 치명적인 피해를 입힙니다. 가장 높은 단일 타겟 파괴력을 자랑합니다.","Deals lethal damage from a safe distance. Boasts the highest single-target destruction power.","安全な距離から敵に致命的なダメージを与えます。最高の単体攻撃力を誇ります。"
+guide.roles.healer.title,힐러 (Healer),Healer,ヒーラー
+guide.roles.healer.desc,"아군의 체력을 회복시키고 보호막을 부여하여 생존을 돕습니다.","Helps allies survive by restoring health and providing shields.","味方の体力を回復させシールドを付与して生存を助けます。"
+guide.roles.cc.title,군중제어 (CC),Crowd Control (CC),クラウドコントロール (CC)
+guide.roles.cc.desc,"적의 이동을 방해하거나 기절시켜 전투의 흐름을 제어합니다.","Controls the flow of battle by slowing or stunning enemies.","敵の移動を妨害したり気絶させて戦闘の流れを制御します。"
+guide.roles.mechanic.title,메카닉 (Mechanic),Mechanic,メカニック
+guide.roles.mechanic.desc,"벽을 수리하거나 기계 장치를 소환하여 아군을 지원하는 하이브리드 직업군입니다.","A hybrid role that supports allies by repairing walls or summoning mechanical devices.","壁を修理したり機械装置を召喚して味方を支援するハイブリッドな役割です。"
+friends.title,친구,Friends,フレンド
+friends.addFriend,친구 추가,Add Friend,フレンドを追加
+friends.searchPlaceholder,사용자명으로 검색 (최소 2자)...,Search by username (min 2 chars)...,ユーザー名で検索（2文字以上）...
+friends.pendingRequests,친구 요청,Pending Requests,フレンド申請
+friends.myFriends,내 친구,My Friends,マイフレンド
+friends.noFriends,친구가 없습니다. 위에서 검색해보세요!,No friends yet. Search for users above!,フレンドがいません。上で検索してみてください！
+friends.add,추가,Add,追加
+friends.accept,수락,Accept,承認
+friends.reject,거절,Reject,拒否
+friends.remove,삭제,Remove,削除
+friends.online,온라인,Online,オンライン
+friends.offline,오프라인,Offline,オフライン
+friends.failedToSend,요청 전송 실패,Failed to send request,リクエストの送信に失敗しました
+friends.failedToAccept,수락 실패,Failed to accept,承認に失敗しました
+friends.failedToReject,거절 실패,Failed to reject,拒否に失敗しました
+friends.failedToRemove,삭제 실패,Failed to remove,削除に失敗しました
+profile.title,내 프로필,My Profile,マイプロフィール
+profile.username,사용자명,Username,ユーザー名
+profile.email,이메일,Email,メールアドレス
+profile.level,레벨,Level,レベル
+profile.experience,경험치,Experience,経験値
+profile.ownedHeroes,영웅 보유 수,Owned Heroes,所有ヒーロー数
+profile.crystals,보유 크리스탈,Crystals,クリスタル
+profile.gold,골드,Gold,ゴールド
+profile.status,상태,Status,ステータス
+profile.memberSince,가입일:,Member since:,登録日:
+profile.lastLogin,마지막 로그인:,Last login:,最終ログイン:
+profile.save,저장,Save,保存
+profile.cancel,취소,Cancel,キャンセル
+profile.edit,[수정],[Edit],[編集]
+profile.profileUpdated,프로필이 업데이트되었습니다!,Profile updated!,プロフィールを更新しました！
+profile.updateFailed,업데이트 실패,Update failed,更新に失敗しました
+profile.failedToLoad,프로필을 불러오지 못했습니다,Failed to load profile,プロフィールの読み込みに失敗しました
+profile.online,온라인,Online,オンライン
+profile.offline,오프라인,Offline,オフライン
+profile.usernameLengthError,사용자명은 3~20자여야 합니다,Username must be 3-20 characters,ユーザー名は3〜20文字で入力してください
+tournament.title,토너먼트,Tournament,トーナメント
+tournament.createTournament,토너먼트 만들기,Create Tournament,トーナメントを作成
+tournament.openTournaments,참가 가능한 토너먼트,Open Tournaments,参加可能なトーナメント
+tournament.noOpenTournaments,참가 가능한 토너먼트 없음,No open tournaments,参加可能なトーナメントなし
+tournament.creating,생성 중...,Creating...,作成中...
+tournament.create,만들기,Create,作成
+tournament.players,명,players,人
+tournament.waiting,대기 중,Waiting,待機中
+tournament.inProgress,진행 중,In Progress,進行中
+tournament.completed,완료,Completed,完了
+tournament.waitingForPlayers,플레이어 대기 중,Waiting for players,プレイヤー待機中
+tournament.host,주최자:,Host:,ホスト:
+tournament.maxPlayers,최대,Max,最大
+tournament.join,참가,Join,参加
+tournament.leave,나가기,Leave,退出
+tournament.start,시작,Start,開始
+tournament.bracket,대진표,Bracket,トーナメント表
+tournament.round,라운드,Round,ラウンド
+tournament.submitResult,결과 제출,Submit Result,結果を提出
+tournament.submit,제출,Submit,提出
+tournament.cancel,취소,Cancel,キャンセル
+tournament.winner,승자:,Winner:,勝者:
+tournament.dismiss,닫기,Dismiss,閉じる
+tournament.yourMatch,내 경기!,Your Match!,あなたの試合！
+tournament.playThenSubmit,게임 후 결과를 제출하세요.,Play the game, then submit your result.,ゲームをプレイして結果を提出してください。
+tournament.selectOrCreate,토너먼트를 선택하거나 만들어보세요,Select or create a tournament to view details,トーナメントを選択または作成してください
+tournament.failedToLoad,토너먼트 불러오기 실패,Failed to load tournaments,トーナメントの読み込みに失敗しました
+tournament.failedToCreate,토너먼트 생성 실패,Failed to create tournament,トーナメントの作成に失敗しました
+tournament.failedToJoin,참가 실패,Failed to join,参加に失敗しました
+tournament.failedToLeave,나가기 실패,Failed to leave,退出に失敗しました
+tournament.failedToStart,시작 실패,Failed to start,開始に失敗しました
+tournament.failedToSubmit,결과 제출 실패,Failed to submit result,結果の提出に失敗しました
+tournament.namePlaceholder,토너먼트 이름,Tournament name,トーナメント名
+tournament.score,점수,score,スコア
+tournament.done,✓ 완료,✓ Done,✓ 完了
+lobby.title,멀티플레이 로비,Multiplayer Lobby,マルチプレイロビー
+lobby.createLobby,로비 만들기,Create Lobby,ロビーを作成
+lobby.cancelCreate,취소,Cancel,キャンセル
+lobby.createNewLobby,새 로비 만들기,Create New Lobby,新しいロビーを作成
+lobby.lobbyName,로비 이름,Lobby Name,ロビー名
+lobby.mode,모드,Mode,モード
+lobby.party,파티 (2인),Party (2P),パーティ（2人）
+lobby.raid,레이드 (3인),Raid (3P),レイド（3人）
+lobby.noLobbies,참가 가능한 로비가 없습니다,No lobbies available,参加可能なロビーがありません
+lobby.noLobbiesDesc,로비를 만들어 게임을 시작하세요!,Create one to start playing!,ロビーを作成してゲームを始めましょう！
+lobby.players,명,players,人
+lobby.host,호스트,Host,ホスト
+lobby.ready,준비 완료,Ready,準備完了
+lobby.notReady,준비 안됨,Not Ready,準備中
+lobby.cancelReady,준비 취소,Cancel Ready,準備を解除
+lobby.startGame,게임 시작,Start Game,ゲーム開始
+lobby.leaveLobby,로비 나가기,Leave Lobby,ロビーを退出
+lobby.chat,채팅,Chat,チャット
+lobby.typeMessage,메시지 입력...,Type a message...,メッセージを入力...
+lobby.send,전송,Send,送信
+lobby.full,가득 참,Full,満員
+lobby.join,참가,Join,参加
+lobby.lobbyNamePlaceholder,내 로비,My Lobby,マイロビー
+roles.all,전체,All,すべて
+roles.tank,탱커,Tank,タンク
+roles.melee_dps,근접 딜러,Melee DPS,近接DPS
+roles.ranged_dps,원거리 딜러,Ranged DPS,遠距離DPS
+roles.healer,힐러,Healer,ヒーラー
+roles.cc,군중제어,CC,CC
+roles.mechanic,메카닉,Mechanic,メカニック
+game.title,Hero Defense,Hero Defense,Hero Defense
+game.achievementUnlocked,업적 달성!,Achievement Unlocked!,実績達成！
+game.multiplayer,멀티플레이,Multiplayer,マルチプレイ
+game.host,(호스트),(Host),（ホスト）
+game.guest,(게스트),(Guest),（ゲスト）
+game.players,플레이어:,Players:,プレイヤー:
+game.startGame,게임 시작,Start Game,ゲーム開始
+game.resume,재개,Resume,再開
+game.pause,일시정지,Pause,一時停止
+game.reset,초기화,Reset,リセット
+game.playAgain,다시 플레이,Play Again,もう一度プレイ
+game.difficulty,난이도,Difficulty,難易度
+game.waves,웨이브,Waves,ウェーブ
+game.easy,쉬움,Easy,簡単
+game.normal,보통,Normal,普通
+game.hard,어려움,Hard,難しい
+game.easyDesc,몬스터 HP/ATK x0.7,Monster HP/ATK x0.7,モンスターHP/ATK x0.7
+game.normalDesc,기본 난이도,Standard difficulty,標準難易度
+game.hardDesc,"몬스터 HP x1.5, ATK x1.4","Monster HP x1.5, ATK x1.4","モンスターHP x1.5, ATK x1.4"
+game.activeSynergies,활성 시너지,Active Synergies,アクティブシナジー
+game.bossAbilities,보스 기술,Boss Abilities,ボススキル
+game.victory,승리,VICTORY,勝利
+game.defeat,패배,DEFEATED,敗北
+game.fighting,전투 중...,Fighting...,戦闘中...
+game.preparing,준비 중...,Preparing...,準備中...
+game.range,사거리,RNG,射程
+aiGame.title,AI 대전 모드,AI Opponent Mode,AI対戦モード
+aiGame.subtitle,AI 최적화 파티에 도전하세요!,Compete against an AI-optimized party!,AI最適化パーティに挑戦してください！
+aiGame.tabAiParty,👥 AI 파티 (10인),👥 AI Party (10P),👥 AIパーティ (10人)
+aiGame.tabAiRaid,⚔️ AI 레이드 (20인),⚔️ AI Raid (20P),⚔️ AIレイド (20人)
+aiGame.tabMercenary,🛡️ 용병단,🛡️ Mercenaries,🛡️ 傭兵団
+aiGame.tabPvp,🏆 PvP (준비 중),🏆 PvP (Coming Soon),🏆 PvP (準備中)
+aiGame.startBoth,모두 시작,Start Both,両方開始
+aiGame.yourScore,내 점수,YOUR SCORE,自分のスコア
+aiGame.aiScore,내 점수,AI SCORE,AIスコア
+aiGame.wave,웨이브,Wave,ウェーブ
+aiGame.youWin,승리!,YOU WIN!,あなたの勝ち！
+aiGame.aiWins,AI 승리!,AI WINS!,AIの勝ち！
+aiGame.yourParty,내 파티,Your Party,自分のパーティ
+aiGame.aiParty,AI 파티,AI Party,AIパーティ
+aiGame.aiStrategy,AI 전략,AI Strategy,AI戦略
+offense.title,던전 공격,Dungeon Offense,ダンジョン攻撃
+offense.desc,적 던전의 수비대를 격파하고 벽을 부수세요!,Defeat the defenders and break the enemy wall!,敵の守備隊を撃破し、壁を破壊せよ！
+offense.defenseTab,🛡 던전 방어,🛡 Defense,🛡 ダンジョン防衛
+offense.offenseTab,⚔ 던전 공격,⚔ Offense,⚔ ダンジョン攻撃
+offense.startBtn,공격 시작!,Start Attack!,攻撃開始！
+offense.selectStage,스테이지 선택,Select Stage,ステージ選択
+offense.normal,노멀,Normal,ノーマル
+offense.elite,정예,Elite,エリート
+offense.eliteDesc,인원 증가 · 능력치 강화,More defenders · Buffed stats,人数増加 · ステータス強化
+offense.partyTitle,⚔ 공격 파티 편성,⚔ Attack Party Setup,⚔ 攻撃パーティ編成
+offense.searchPlaceholder,이름, 종족, 属性, 역할로 검색...,Search name, race, element, role...,名前、種族、属性、役割で検索...
+offense.enemyWall,🏰 적 던전 벽,🏰 Enemy Dungeon Wall,🏰 敵のダンジョン壁
+offense.defeat,전멸...,Defeated...,全滅...
+offense.defeatDesc,수비대를 돌파하지 못했습니다.,Failed to break through the defenders.,守備隊を突破できませんでした。
+guide.title,영웅 가이드북,Hero Guidebook,英雄ガイドブック
+guide.subtitle,직업군별 역할과 핵심 메커니즘을 알아보세요.,Learn about roles and core game mechanics.,役割と主要なゲームメカニクスについて学びましょう。
+guide.roles.tank.title,탱커 (Tank),Tank,タンク (Tank)
+guide.roles.tank.desc,높은 방어력과 체력을 바탕으로 아군의 최전방을 책임집니다. 몬스터들의 어그로를 끌어 대신 피해를 입으며 적들을 한곳으로 모으는 역할을 합니다.,"Responsible for the front line with high DEF and HP. They draw monster aggro to take damage and cluster enemies together.",高い防御力と体力で最前線を担当します。モンスターのヘイトを稼ぎ、ダメージを肩代わりして敵を1箇所に集める役割を果たします。
+guide.roles.melee_dps.title,근접 딜러 (Melee DPS),Melee DPS,近接ディーラー (Melee DPS)
+guide.roles.melee_dps.desc,강력한 근접 공격으로 적을 파괴합니다. 탱커 옆에서 보조하거나 강력한 단일 딜링을 담당합니다.,Destroys enemies with powerful close-range attacks. Supports tanks or focuses on high single-target damage.,強力な近接攻撃で敵を粉砕します。タンクをサポートしたり、強力な単体攻撃を担当します。
+guide.roles.ranged_dps.title,원거리 딜러 (Ranged DPS),Ranged DPS,遠距離ディーラー (Ranged DPS)
+guide.roles.ranged_dps.desc,안전한 거리에서 적에게 치명적인 피해를 입힙니다. 가장 높은 단일 타겟 파괴력을 자랑합니다.,Deals lethal damage from a safe distance. Boasts the highest single-target destruction power.,安全な距離から敵に致命的なダメージを与えます。最高の単体攻撃力を誇ります。
+guide.roles.healer.title,힐러 (Healer),Healer,ヒーラー (Healer)
+guide.roles.healer.desc,아군의 체력을 회복시키고 보호막을 부여하여 생존을 돕습니다.,Helps allies survive by restoring health and providing shields.,味方の体力を回復させ、シールドを付与して生存を助けます。
+guide.roles.cc.title,군중제어 (CC),Crowd Control (CC),クラウドコントロール (CC)
+guide.roles.cc.desc,적의 이동을 방해하거나 기절시켜 전투의 흐름을 제어합니다.,Controls the flow of battle by slowing or stunning enemies.,敵の移動を妨害したり、気絶させて戦闘の流れを制御します。
+guide.roles.mechanic.title,메카닉 (Mechanic),Mechanic,メカニック (Mechanic)
+guide.roles.mechanic.desc,벽을 수리하거나 기계 장치를 소환하여 아군을 지원하는 하이브리드 직업군입니다.,A hybrid role that supports allies by repairing walls or summoning mechanical devices.,壁を修理したり、機械装置を召喚して味方を支援するハイブリッドな役割です。
+monsterTiers.초급,초급,Basic,初級
+monsterTiers.중급,중급,Intermediate,中級
+monsterTiers.고급,고급,Advanced,上級
+monsterTiers.최강,최강,Legendary,最強
+monsterTypes.normal,일반,Normal,一般
+monsterTypes.elite,정예,Elite,精鋭
+monsterTypes.boss,보스,Boss,ボス
+monsterBook.wavePrefix,웨이브,Wave,ウェーブ
+monsterBook.attackType,타입,Type,タイプ
+monsterBook.ranged,원거리,Ranged,遠距離
+monsterBook.melee,근거리,Melee,近距離
+monsterBook.tacticalTip,전술 팁,Tactical Tip,戦術チップ
+monsterCategories.goblin,고블린 계열,Goblin Type,ゴブリン系
+monsterCategories.boss,보스,Boss,ボス
+monsterCategories.beast,야수 계열,Beast Type,野獣系
+monsterCategories.orc,오크/트롤 계열,Orc/Troll Type,オーク・トロール系
+monsterCategories.elemental,정령 계열,Elemental Type,元素系
+monsterCategories.dark,암흑/공허 계열,Dark/Void Type,暗黒・虚空系
+monsterCategories.giant,언데드 거인 계열,Undead Giant Type,アンデッド巨人系
+monsterCategories.skeleton,해골/언데드 계열,Skeleton/Undead Type,スケルトン・アンデッド系
+monsterCategories.golem,골렘 계열,Golem Type,ゴーレム系
+
+shop.expandSkills,스킬 목록 보기 ▼,View Skills ▼,スキルリストを表示 ▼
+shop.collapseSkills,스킬 접기 ▲,Hide Skills ▲,スキルリストを閉じる ▲
+synergy.race.orc.name,오크,Orc,オーク
+synergy.race.orc.t1,전체 체력 +10%,All HP +10%,全体HP +10%
+synergy.race.orc.t2,전체 체력 +20% · 방어 +8,All HP +20% · DEF +8,全体HP +20% · 防御 +8
+synergy.race.orc.t3,전체 체력 +30% · 방어 +15,All HP +30% · DEF +15,全体HP +30% · 防御 +15
+synergy.race.human.name,인간,Human,人間
+synergy.race.human.t1,전체 공격력 +10%,All ATK +10%,全体ATK +10%
+synergy.race.human.t2,전체 공격력 +15% · 공격속도 +10%,All ATK +15% · ATK SPD +10%,全体ATK +15% · 攻速 +10%
+synergy.race.human.t3,전체 공격력 +25% · 공격속도 +15%,All ATK +25% · ATK SPD +15%,全体ATK +25% · 攻速 +15%
+synergy.race.elf.name,엘프,Elf,エルフ
+synergy.race.elf.t1,CC 지속시간 +30%,CC Duration +30%,CC持続時間 +30%
+synergy.race.elf.t2,CC 지속시간 +50% · 스킬 범위 +20%,CC Duration +50% · Skill Range +20%,CC持続時間 +50% · スキル範囲 +20%
+synergy.race.elf.t3,CC 지속시간 +80% · 스킬 범위 +30%,CC Duration +80% · Skill Range +30%,CC持続時間 +80% · スキル範囲 +30%
+synergy.race.undead.name,언데드,Undead,アンデッド
+synergy.race.undead.t1,힐량 +20%,Heal +20%,回復量 +20%
+synergy.race.undead.t2,힐량 +35%,Heal +35%,回復量 +35%
+synergy.race.undead.t3,힐량 +50% · 생명 흡수 10%,Heal +50% · Life Steal 10%,回復量 +50% · 吸血 10%
+synergy.race.tauren.name,타우렌,Tauren,タウレン
+"synergy.race.tauren.t1","체력 +15%, 방어력 +5","HP +15%, DEF +5","HP +15%, 防御 +5"
+"synergy.race.tauren.t2","체력 +25%, 방어력 +12","HP +25%, DEF +12","HP +25%, 防御 +12"
+"synergy.race.tauren.t3","체력 +40%, 방어력 +20","HP +40%, DEF +20","HP +40%, 防御 +20"
+synergy.race.troll.name,트롤,Troll,トロル
+synergy.race.troll.t1,공격속도 +15%,ATK SPD +15%,攻速 +15%
+"synergy.race.troll.t2","공격속도 +25%, 힐량 +10%","ATK SPD +25%, Heal +10%","攻速 +25%, 回復量 +10%"
+"synergy.race.troll.t3","공격속도 +35%, 힐량 +20%","ATK SPD +35%, Heal +20%","攻速 +35%, 回復量 +20%"
+synergy.race.pandaren.name,판다렌,Pandaren,パンダレン
+"synergy.race.pandaren.t1","방어력 +8, 이동속도 +10%","DEF +8, Move SPD +10%","防御 +8, 移動速度 +10%"
+"synergy.race.pandaren.t2","방어력 +15, 이동속도 +15%","DEF +15, Move SPD +15%","防御 +15, 移動速度 +15%"
+"synergy.race.pandaren.t3","방어력 +25, 이동속도 +20%, 체력 +10%","DEF +25, Move SPD +20%, HP +10%","防御 +25, 移動速度 +20%, HP +10%"
+synergy.race.beast.name,야수족,Beastkin,獣族
+synergy.race.beast.t1,공격력 +12%,ATK +12%,ATK +12%
+"synergy.race.beast.t2","공격력 +20%, 공격속도 +15%, 흡혈 5%","ATK +20%, ATK SPD +15%, Life Steal 5%","ATK +20%, 攻速 +15%, 吸血 5%"
+synergy.race.nightelf.name,밤엘프,Night Elf,ナイトエルフ
+synergy.race.nightelf.t1,이동속도 +15%,Move SPD +15%,移動速度 +15%
+"synergy.race.nightelf.t2","이동속도 +25%, 공격력 +12%","Move SPD +25%, ATK +12%","移動速度 +25%, ATK +12%"
+synergy.race.goblin.name,고블린,Goblin,ゴブリン
+synergy.race.goblin.t1,공격속도 +15%,ATK SPD +15%,攻速 +15%
+"synergy.race.goblin.t2","공격속도 +25%, 공격력 +10%","ATK SPD +25%, ATK +10%","攻速 +25%, ATK +10%"
+"synergy.race.goblin.t3","공격속도 +35%, 공격력 +15%","ATK SPD +35%, ATK +15%","攻速 +35%, ATK +15%"
+synergy.race.draenei.name,드레나이,Draenei,ドレナイ
+synergy.race.draenei.t1,힐량 +15%,Heal +15%,回復量 +15%
+"synergy.race.draenei.t2","힐량 +25%, 체력 +10%","Heal +25%, HP +10%","回復量 +25%, HP +10%"
+"synergy.race.draenei.t3","힐량 +40%, 체력 +15%, 방어력 +8","Heal +40%, HP +15%, DEF +8","回復量 +40%, HP +15%, 防御 +8"
+synergy.race.bloodelf.name,블러드엘프,Blood Elf,ブラッドエルフ
+synergy.race.bloodelf.t1,공격력 +12%,ATK +12%,ATK +12%
+"synergy.race.bloodelf.t2","공격력 +20%, 흡혈 5%","ATK +20%, Life Steal 5%","ATK +20%, 吸血 5%"
+"synergy.race.bloodelf.t3","공격력 +30%, 흡혈 10%","ATK +30%, Life Steal 10%","ATK +30%, 吸血 10%"
+synergy.race.voidelf.name,공허엘프,Void Elf,ヴォイドエルフ
+"synergy.race.voidelf.t1","공격력 +10%, 처형 임계값 +5%","ATK +10%, Execute Threshold +5%","ATK +10%, 処刑閾値 +5%"
+synergy.race.lightforged.name,빛벼림 드레나이,Lightforged Draenei,ライトフォージド・ドレナイ
+"synergy.race.lightforged.t1","힐량 +15%, 공격력 +10%","Heal +15%, ATK +10%","回復量 +15%, ATK +10%"
+synergy.race.gnome.name,노움,Gnome,ノーム
+synergy.race.gnome.t1,공격력 +10%,ATK +10%,ATK +10%
+"synergy.race.gnome.t2","공격력 +15%, 방어력 +8","ATK +15%, DEF +8","ATK +15%, 防御 +8"
+"synergy.race.gnome.t3","공격력 +20%, 방어력 +15, 체력 +10%","ATK +20%, DEF +15, HP +10%","ATK +20%, 防御 +15, HP +10%"
+synergy.race.dracthyr.name,드렉티르,Dracthyr,ドラクティル
+synergy.element.fire.name,화염,Fire,火炎
+synergy.element.fire.t1,전체 공격력 +15%,All ATK +15%,全体ATK +15%
+synergy.element.fire.t2,전체 공격력 +25%,All ATK +25%,全体ATK +25%
+synergy.element.fire.t3,전체 공격력 +35% · 화상 효과 부여,All ATK +35% · Apply Burn,全体ATK +35% · 炎上効果付与
+synergy.element.frost.name,냉기,Frost,冷気
+synergy.element.frost.t1,적 둔화 +30%,Enemy Slow +30%,敵スロウ +30%
+synergy.element.frost.t2,적 둔화 +60%,Enemy Slow +60%,敵スロウ +60%
+synergy.element.frost.t3,적 둔화 +100% · 빙결 확률 30%,Enemy Slow +100% · Freeze Chance 30%,敵スロウ +100% · 凍結確率 30%
+synergy.element.holy.name,신성,Holy,聖
+synergy.element.holy.t1,힐량 +20%,Heal +20%,回復量 +20%
+synergy.element.holy.t2,힐량 +35%,Heal +35%,回復量 +35%
+synergy.element.holy.t3,힐량 +50% · 최대 체력 +20%,Heal +50% · Max HP +20%,回復量 +50% · 最大HP +20%
+synergy.element.dark.name,암흑,Dark,暗黒
+"synergy.element.dark.t1","처형 확률 +5% (체력 30% 이하)","Execute Chance +5% (below 30% HP)","処刑確率 +5% (HP 30%以下)"
+synergy.element.dark.t2,처형 확률 +10%,Execute Chance +10%,処刑確率 +10%
+synergy.element.dark.t3,처형 확률 +15% · 생명 흡수 15%,Execute Chance +15% · Life Steal 15%,処刑確率 +15% · 吸血 15%
+synergy.element.nature.name,자연,Nature,自然
+synergy.element.nature.t1,힐량 +15%,Heal +15%,回復量 +15%
+"synergy.element.nature.t2","힐량 +25%, 체력 +10%","Heal +25%, HP +10%","回復量 +25%, HP +10%"
+"synergy.element.nature.t3","힐량 +40%, 체력 +15%","Heal +40%, HP +15%","回復量 +40%, HP +15%"
+synergy.element.water.name,물,Water,水
+"synergy.element.water.t1","힐량 +15%, 이동속도 +10%","Heal +15%, Move SPD +10%","回復量 +15%, 移動速度 +10%"
+"synergy.element.water.t2","힐량 +25%, 이동속도 +15%","Heal +25%, Move SPD +15%","回復量 +25%, 移動速度 +15%"
+"synergy.element.water.t3","힐량 +35%, 이동속도 +20%, 체력 +10%","Heal +35%, Move SPD +20%, HP +10%","回復量 +35%, 移動速度 +20%, HP +10%"
+synergy.element.thunder.name,번개,Thunder,雷
+synergy.element.thunder.t1,공격속도 +20%,ATK SPD +20%,攻速 +20%
+"synergy.element.thunder.t2","공격속도 +35%, 공격력 +10%","ATK SPD +35%, ATK +10%","攻速 +35%, ATK +10%"
+"synergy.element.thunder.t3","공격속도 +50%, 공격력 +15%","ATK SPD +50%, ATK +15%","攻速 +50%, ATK +15%"
+synergy.element.ice.name,서리,Ice,氷
+"synergy.element.ice.t1","방어력 +10, CC 지속 +20%","DEF +10, CC Duration +20%","防御 +10, CC持続 +20%"
+"synergy.element.ice.t2","방어력 +20, CC 지속 +40%","DEF +20, CC Duration +40%","防御 +20, CC持続 +40%"
+"synergy.element.ice.t3","방어력 +30, CC 지속 +60%, 체력 +10%","DEF +30, CC Duration +60%, HP +10%","防御 +30, CC持続 +60%, HP +10%"
+synergy.element.wind.name,바람,Wind,風
+"synergy.element.wind.t1","이동속도 +15%, 공격속도 +10%","Move SPD +15%, ATK SPD +10%","移動速度 +15%, 攻速 +10%"
+"synergy.element.wind.t2","이동속도 +20%, 공격속도 +20%","Move SPD +20%, ATK SPD +20%","移動速度 +20%, 攻速 +20%"
+"synergy.element.wind.t3","이동속도 +25%, 공격속도 +30%, 공격력 +10%","Move SPD +25%, ATK SPD +30%, ATK +10%","移動速度 +25%, 攻速 +30%, ATK +10%"
+synergy.element.poison.name,독,Poison,毒
+synergy.element.poison.t1,처형 임계값 +5%,Execute Threshold +5%,処刑閾値 +5%
+"synergy.element.poison.t2","처형 임계값 +10%, 공격력 +10%","Execute Threshold +10%, ATK +10%","処刑閾値 +10%, ATK +10%"
+"synergy.element.poison.t3","처형 임계값 +15%, 공격력 +15%, 흡혈 5%","Execute Threshold +15%, ATK +15%, 吸血 5%"
+synergy.element.flame.name,불꽃,Flame,炎
+synergy.element.flame.t1,공격력 +18%,ATK +18%,ATK +18%
+synergy.element.flame.t2,공격력 +28%,ATK +28%,ATK +28%
+synergy.element.flame.t3,공격력 +40%,ATK +40%,ATK +40%
+synergy.element.dragon.name,용 ★,Dragon ★,ドラゴン ★
+"synergy.element.dragon.t1","용의 은총 — 전체 공격력 +20%, 체력 +15% (1명 단독 발동!)","Dragon's Grace — All ATK +20%, HP +15% (activates with 1!)","竜の恩寵 — 全体ATK +20%, HP +15% (1人で発動!)"
+synergy.element.light.name,빛,Light,光
+dashboard.tutorialTitle,튜토리얼,Tutorial,チュートリアル
+dashboard.tutorialDesc,처음 오셨나요? 주인공과 함께 기초를 배워보세요.,First time here? Learn the basics with the main hero.,はじめての方？主人公と一緒に基礎を学びましょう。
+dashboard.tutorialStage1,Stage 1 — 홀로 맞서다 (5 웨이브),Stage 1 — Stand Alone (5 Waves),Stage 1 — 孤独な戦い（5ウェーブ）
+dashboard.tutorialHint1,노스킬 순수 체급으로 생존,Survive with raw stats — no skills,スキルなしで純粋なステータスで生き抜く
+dashboard.tutorialHint2,5번째 웨이브 보스와의 조우,Face the Wave 5 boss,5ウェーブ目のボスとの遭遇
+dashboard.tutorialStart,튜토리얼 시작,Start Tutorial,チュートリアルを開始
+dashboard.tutorialSkip,건너뛰기,Skip,スキップ
+dashboard.shopDesc2,영웅 영입 & 벽 강화,Recruit & Fortify,英雄雇用 & 防壁強化
+dashboard.heroesManageTitle,내 영웅 관리,Manage Heroes,英雄管理
+dashboard.heroesManageDesc,전직 및 스킬 세팅,Class Change & Skills,転職とスキル設定
+dashboard.synergyTitle,시너지 가이드,Synergy Guide,シナジーガイド
+dashboard.synergyDesc,종족 및 원소 효과 확인,Race & Element effects,種族と属性効果を確認
+friends.requestSent,"{username}님에게 친구 요청을 보냈습니다.","Friend request sent to {username}.","{username}さんにフレンド申請を送りました。"
+friends.removeConfirm,{username}님을 친구 목록에서 삭제하시겠습니까?,Remove {username} from friends?,{username}さんをフレンドリストから削除しますか？
+friends.removed,{username}님을 친구 목록에서 삭제했습니다.,{username} removed from friends.,{username}さんをフレンドリストから削除しました。
+friends.requestAccepted,친구 요청을 수락했습니다.,Friend request accepted.,フレンド申請を承認しました。
+friends.requestRejected,친구 요청을 거절했습니다.,Friend request rejected.,フレンド申請を拒否しました。
+profile.imageOnly,이미지 파일만 업로드 가능합니다.,Only image files can be uploaded.,画像ファイルのみアップロードできます。
+profile.avatarUpdated,아바타가 업데이트되었습니다.,Avatar updated.,アバターが更新されました。
+profile.avatarFailed,아바타 업로드에 실패했습니다.,Failed to upload avatar.,アバターのアップロードに失敗しました。
+profile.changeAvatar,클릭하여 아바타 변경,Click to change avatar,クリックしてアバターを変更
+profile.changeBtn,변경,Change,変更
+"aiGame.upgradeConfirm","{name}을(를) {star}성으로 강화하시겠습니까?\n소모 골드: {cost}G","Upgrade {name} to {star}★?\nCost: {cost}G","{name}を{star}☆に強化しますか？\n消費ゴールド: {cost}G"
+leaderboard.me,ME,ME,ME
+leaderboard.top100,Top 100,Top 100,Top 100
+game.activeSynergyPreview,✨ 활성 시너지,✨ Active Synergies,✨ アクティブシナジー
+game.heroSearchPlaceholder,이름 · 종족 · 원소 · 역할로 검색...,Search name · race · element · role...,名前・種族・属性・役割で検索...
+game.hostLeft,호스트가 게임을 떠났습니다.,Host has left the game.,ホストがゲームを離れました。
+game.hostLeftDesc,{n}초 후 게임이 종료됩니다.,Game ends in {n} seconds.,{n}秒後にゲームが終了します。
+offense.stageInfo,스테이지 {id} — {name},Stage {id} — {name},ステージ {id} — {name}
+offense.stageClear,스테이지 {id} 클리어!,Stage {id} Clear!,ステージ {id} クリア！
+offense.retryHint,파티를 강화해 다시 도전하세요!,Strengthen your party and try again!,パーティを強化して再挑戦しましょう！
+offense.autoReturn,{n}초 후 메인화면으로 자동 이동합니다...,Returning to main screen in {n} seconds...,{n}秒後にメイン画面に戻ります...
+synergy.heroCount,{count}명,{count} heroes,{count}人
