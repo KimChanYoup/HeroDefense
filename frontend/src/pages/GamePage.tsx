@@ -2054,7 +2054,7 @@ export default function GamePage() {
       )}
 
       {/* Game Over Actions */}
-      {gameState && (gameState.phase === 'victory' || gameState.phase === 'defeat') && (
+      {gameState && (gameState.phase === 'victory' || gameState.phase === 'defeat') && !isGuest && (
         <div className="flex flex-col items-center gap-3 mt-4">
           {/* 무한 디펜스 패배: 체크포인트 UI */}
           {maxWave === 1000 && gameState.phase === 'defeat' && !isGuest && (() => {
