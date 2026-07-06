@@ -2661,16 +2661,4 @@ function HeroesPage() {
   );
 }
 
-export {
-  loadSave,
-  loadProtagonistSave,
-  loadProtagonistDefenseSave,
-  loadProtagonistAISave,
-  loadProtagonistOffenseSave,
-  loadProtagonistRaidSave,
-  loadOwnedHeroes,
-  saveOwnedHeroes,
-  HeroesPage
-};
-
 export default HeroesPage;
