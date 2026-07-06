@@ -1012,14 +1012,14 @@ export default function GamePage() {
     if (!isMultiplayer || !lobbyId) return;
     mountedRef.current = true;
     return () => {
-      // StrictMode에서는 mount→unmount→mount 순서로 호출됨
-      // 실제 언마운트인지 확인하기 위해 setTimeout으로 다음 틱에서 체크
+      // StrictMode: mount→unmount→remount 사이클에서 remount가 완료될 때까지 대기
+      // 3인 raid 등 영웅 데이터가 많을수록 re-mount가 느려지므로 300ms로 여유 확보
       setTimeout(() => {
         if (!mountedRef.current) {
           const socket = getSocket();
           socket.emit('lobby:leave');
         }
-      }, 50);
+      }, 300);
       mountedRef.current = false;
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
