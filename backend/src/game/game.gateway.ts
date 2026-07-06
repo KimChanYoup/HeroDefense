@@ -206,9 +206,27 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
       return;
     }
 
-    // 신규 입장 시 검증
+    // 신규 입장 시 검증 — playing 중에는 새 플레이어 입장 불가
     if (lobby.status !== 'waiting') {
-      client.emit('error', { message: 'Game already in progress' });
+      // playing 중이더라도 이전에 이 로비에 있던 플레이어(userId 기준)라면 재진입 허용
+      const wasPlayer = Array.from(this.playerSockets.values())
+        .some(ps => ps.userId === playerInfo.userId && ps.lobbyId === null);
+      if (!wasPlayer) {
+        client.emit('error', { message: 'Game already in progress' });
+        return;
+      }
+      // 이전 플레이어 재진입: 배열에 추가하고 방 참가
+      lobby.players.push({
+        id: playerInfo.userId,
+        username: playerInfo.username,
+        socketId: client.id,
+        isReady: true, // playing 중 재진입은 ready 처리
+      });
+      playerInfo.lobbyId = data.lobbyId;
+      client.join(data.lobbyId);
+      client.emit('lobby:joined', this.sanitizeLobby(lobby));
+      this.server.to(data.lobbyId).emit('lobby:updated', this.sanitizeLobby(lobby));
+      console.log(`[lobby:join] 🔄 게임 중 재진입 허용: ${playerInfo.username} → ${data.lobbyId}`);
       return;
     }
     if (lobby.players.length >= lobby.maxPlayers) {
@@ -333,7 +351,7 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
   // ========================
 
   @SubscribeMessage('game:heroData')
-  handleHeroData(
+  async handleHeroData(
     @ConnectedSocket() client: Socket,
     @MessageBody() data: { lobbyId: string; userId: number; heroes: any[] },
   ) {
@@ -357,10 +375,16 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
     const submissions = this.heroSubmissions.get(lobbyId)!;
 
     // 플레이어 정보 업데이트 (소켓 재연결 대응)
-    const player = lobby.players.find(p => p.id === userId);
+    let player = lobby.players.find(p => p.id === userId);
     if (!player) {
-      console.log(`[game:heroData] ❌ 오류: userId=${userId} 가 lobby 플레이어 목록에 없음. players:`, lobby.players.map(p => p.id));
-      return;
+      // playing 중 재연결로 players 배열에 없을 수 있음 → 자동 재추가
+      const dbUser = await this.userService.getProfile(userId).catch(() => null);
+      const username = dbUser?.username ?? playerInfo?.username ?? String(userId);
+      console.log(`[game:heroData] 🔄 플레이어 재추가: userId=${userId} (${username})`);
+      player = { id: userId, username, socketId: client.id, isReady: true };
+      lobby.players.push(player);
+      client.join(lobbyId);
+      playerInfo && (playerInfo.lobbyId = lobbyId);
     }
 
     if (player.socketId !== client.id) {
@@ -580,37 +604,42 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
     const playerInfo = this.playerSockets.get(client.id);
     const leaving = lobby.players.find(p => p.socketId === client.id);
 
-    lobby.players = lobby.players.filter(p => p.socketId !== client.id);
+    // 게임 진행 중(playing)이면 플레이어를 배열에서 완전히 제거하지 않고
+    // 소켓만 방에서 나가게 처리 — 재연결 시 game:heroData 재제출 가능하도록 보존
+    const isPlaying = lobby.status === 'playing';
+    if (!isPlaying) {
+      lobby.players = lobby.players.filter(p => p.socketId !== client.id);
+    }
     client.leave(lobbyId);
 
     if (playerInfo) {
       playerInfo.lobbyId = null;
     }
 
-    // 게임 진행 중(playing) 또는 준비 완료(ready) 상태에서 플레이어가 나가면
-    // 남은 플레이어에게 명시적으로 알림 (GamePage에서 사용)
     const wasInGame = lobby.status === 'playing' || lobby.status === 'ready';
 
-    if (lobby.players.length === 0) {
+    const remainingPlayers = isPlaying
+      ? lobby.players  // playing 중엔 배열 유지
+      : lobby.players;
+
+    if (remainingPlayers.length === 0 || (!isPlaying && lobby.players.length === 0)) {
       this.lobbies.delete(lobbyId);
       this.lobbyMessages.delete(lobbyId);
       this.activeGames.delete(lobbyId);
       this.heroSubmissions.delete(lobbyId);
-    } else {
-      // Transfer host if host left
+    } else if (!isPlaying) {
+      // waiting/ready 상태에서만 로비 상태 리셋
       if (lobby.hostId === leaving?.id) {
         lobby.hostId = lobby.players[0].id;
       }
       lobby.status = 'waiting';
       this.server.to(lobbyId).emit('lobby:updated', this.sanitizeLobby(lobby));
 
-      // 게임/준비 중 이탈 시 전용 이벤트 (issues #9, #10)
       if (wasInGame && leaving) {
         this.server.to(lobbyId).emit('game:playerLeft', {
           userId: leaving.id,
           username: leaving.username,
         });
-        // 진행 중이던 게임 정리
         this.activeGames.delete(lobbyId);
         this.heroSubmissions.delete(lobbyId);
       }
@@ -623,6 +652,7 @@ export class GameGateway implements OnGatewayConnection, OnGatewayDisconnect {
         });
       }
     }
+    // playing 중 disconnect는 재연결을 기대 — 강제 종료하지 않음
 
     client.emit('lobby:left');
   }
