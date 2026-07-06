@@ -14,6 +14,7 @@ interface Notification {
   achievedAt: string;
   rewardGold: number;
   rewardCrystals: number;
+  unlocked: boolean;
 }
 
 export default function Layout() {
@@ -40,7 +41,7 @@ export default function Layout() {
     if (!user) return;
     api.get('/achievements')
       .then(res => {
-        const unlocked: Notification[] = (res.data as any[])
+        const unlocked: Notification[] = (res.data as Notification[])
           .filter(a => a.unlocked && a.achievedAt)
           .sort((a, b) => new Date(b.achievedAt).getTime() - new Date(a.achievedAt).getTime())
           .slice(0, 20);
@@ -165,10 +166,10 @@ export default function Layout() {
                   {showNotifPanel && (
                     <div className="absolute right-0 top-9 w-80 bg-gray-800 border border-gray-600 rounded-xl shadow-2xl z-50 overflow-hidden">
                       <div className="px-4 py-3 border-b border-gray-700 font-semibold text-sm text-gray-200">
-                        {(t as any).notification?.title ?? 'Notifications'}
+                        {t.notification?.title ?? 'Notifications'}
                       </div>
                       {notifications.length === 0 ? (
-                        <div className="px-4 py-6 text-center text-gray-500 text-sm">{(t as any).notification?.empty ?? 'No notifications.'}</div>
+                        <div className="px-4 py-6 text-center text-gray-500 text-sm">{t.notification?.empty ?? 'No notifications.'}</div>
                       ) : (
                         <div className="max-h-80 overflow-y-auto divide-y divide-gray-700">
                           {notifications.map(n => (

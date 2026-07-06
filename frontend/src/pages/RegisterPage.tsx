@@ -38,12 +38,12 @@ export default function RegisterPage() {
     try {
       await register(email, username, password);
       navigate('/');
-    } catch (err: any) {
-      const msg = err.response?.data?.message;
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
       if (msg === 'Email already in use') {
-        setError((t.register as any).emailAlreadyInUse || '이미 사용 중인 이메일입니다.');
+        setError(t.register.emailAlreadyInUse);
       } else if (msg === 'Username already taken') {
-        setError((t.register as any).usernameAlreadyTaken || '이미 사용 중인 닉네임입니다.');
+        setError(t.register.usernameAlreadyTaken);
       } else {
         setError(msg || t.register.registrationFailed);
       }

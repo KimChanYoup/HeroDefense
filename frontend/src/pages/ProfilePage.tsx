@@ -145,8 +145,9 @@ export default function ProfilePage() {
         parsed.username = data.username;
         localStorage.setItem('user', JSON.stringify(parsed));
       }
-    } catch (err: any) {
-      setError(err.response?.data?.message || t.profile.updateFailed);
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+      setError(msg || t.profile.updateFailed);
     }
   };
 

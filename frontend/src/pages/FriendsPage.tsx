@@ -56,7 +56,7 @@ export default function FriendsPage() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const pollRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  const ft = (t as any).friends;
+  const ft = t.friends;
 
   const fetchData = async () => {
     try {
@@ -160,8 +160,9 @@ export default function FriendsPage() {
       showMessage((ft?.requestSent || '{username}님에게 친구 요청을 보냈습니다.').replace('{username}', username));
       setSearchQuery('');
       setSearchResults([]);
-    } catch (err: any) {
-      showError(err.response?.data?.message || ft?.failedToSend);
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+      showError(msg || ft?.failedToSend);
     }
   };
 
@@ -170,8 +171,9 @@ export default function FriendsPage() {
       await api.put(`/friends/accept/${friendshipId}`);
       showMessage(ft?.requestAccepted || '친구 요청을 수락했습니다.');
       fetchData();
-    } catch (err: any) {
-      showError(err.response?.data?.message || ft?.failedToAccept);
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+      showError(msg || ft?.failedToAccept);
     }
   };
 
@@ -180,8 +182,9 @@ export default function FriendsPage() {
       await api.put(`/friends/reject/${friendshipId}`);
       showMessage(ft?.requestRejected || '친구 요청을 거절했습니다.');
       fetchData();
-    } catch (err: any) {
-      showError(err.response?.data?.message || ft?.failedToReject);
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+      showError(msg || ft?.failedToReject);
     }
   };
 
@@ -192,8 +195,9 @@ export default function FriendsPage() {
       showMessage((ft?.removed || '{username}님을 친구 목록에서 삭제했습니다.').replace('{username}', username));
       if (chatFriend?.friendshipId === friendshipId) closeChat();
       fetchData();
-    } catch (err: any) {
-      showError(err.response?.data?.message || ft?.failedToRemove);
+    } catch (err: unknown) {
+      const msg = (err as { response?: { data?: { message?: string } } })?.response?.data?.message;
+      showError(msg || ft?.failedToRemove);
     }
   };
 
@@ -210,7 +214,7 @@ export default function FriendsPage() {
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[calc(100vh-8rem)]">
-        <div className="text-yellow-400 text-xl">{(t as any).common?.loading}</div>
+        <div className="text-yellow-400 text-xl">{t.common?.loading}</div>
       </div>
     );
   }
