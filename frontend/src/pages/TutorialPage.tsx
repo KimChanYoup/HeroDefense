@@ -43,6 +43,7 @@ export default function TutorialPage() {
   const prevWaveRef = useRef<number>(0);
   const bossIntroShownRef = useRef(false);
   const goldSavedRef = useRef(false);
+  const narrationWaveRef = useRef<number | null>(null);
 
   const [screen, setScreen] = useState<TutorialScreen>('intro');
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -73,6 +74,7 @@ export default function TutorialPage() {
 
   useEffect(() => {
     if (!rendererRef.current) return;
+    rendererRef.current.t_i18n = t;
     rendererRef.current.wallLabel = t('game.wallLabel');
     rendererRef.current.wall2Label = t('game.wall2Label');
     rendererRef.current.wall3Label = t('game.wall3Label');
@@ -110,7 +112,7 @@ export default function TutorialPage() {
   // ── 웨이브 클리어 나레이션 자동 해제
   useEffect(() => {
     if (!waveNarration) return;
-    const timer = setTimeout(() => setWaveNarration(null), 3500);
+    const timer = setTimeout(() => { setWaveNarration(null); narrationWaveRef.current = null; }, 3500);
     return () => clearTimeout(timer);
   }, [waveNarration]);
 
@@ -144,11 +146,18 @@ export default function TutorialPage() {
     if (phase === 'wave_clear' && currentWave !== prevWaveRef.current) {
       prevWaveRef.current = currentWave;
       const lines = WAVE_CLEAR_LINES[currentWave];
-      if (lines) setWaveNarration(lines);
+      if (lines) { narrationWaveRef.current = currentWave; setWaveNarration(lines); }
     }
 
     prevPhaseRef.current = phase;
   }, [gameState, screen, WAVE_CLEAR_LINES]);
+
+  useEffect(() => {
+    if (narrationWaveRef.current !== null) {
+      const lines = WAVE_CLEAR_LINES[narrationWaveRef.current];
+      if (lines) setWaveNarration(lines);
+    }
+  }, [WAVE_CLEAR_LINES]);
 
   // ── 사망 연출
   useEffect(() => {

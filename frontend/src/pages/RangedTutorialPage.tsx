@@ -20,6 +20,7 @@ export default function RangedTutorialPage() {
   const engineRef = useRef<GameEngine | null>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const prevWaveRef = useRef<number>(0);
+  const narrationKeyRef = useRef<string | null>(null);
 
   const [screen, setScreen] = useState<RangedTutorialScreen>('intro');
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -52,6 +53,7 @@ export default function RangedTutorialPage() {
 
   useEffect(() => {
     if (!rendererRef.current) return;
+    rendererRef.current.t_i18n = t;
     rendererRef.current.wallLabel = t('game.wallLabel');
     rendererRef.current.wall2Label = t('game.wall2Label');
     rendererRef.current.wall3Label = t('game.wall3Label');
@@ -112,8 +114,9 @@ export default function RangedTutorialPage() {
       prevWaveRef.current = currentWave;
       const key = `wave${currentWave}_clear` as keyof typeof DIALOGUE_SEQUENCES;
       if (DIALOGUE_SEQUENCES[key]) {
+        narrationKeyRef.current = key;
         setNarration(DIALOGUE_SEQUENCES[key] as string[]);
-        setTimeout(() => setNarration(null), 5000);
+        setTimeout(() => { setNarration(null); narrationKeyRef.current = null; }, 5000);
       }
     }
 
@@ -127,6 +130,13 @@ export default function RangedTutorialPage() {
       }, 5000);
     }
   }, [gameState, screen, DIALOGUE_SEQUENCES, wave2Action]);
+
+  useEffect(() => {
+    if (narrationKeyRef.current) {
+      const lines = DIALOGUE_SEQUENCES[narrationKeyRef.current as keyof typeof DIALOGUE_SEQUENCES];
+      if (lines) setNarration(lines as string[]);
+    }
+  }, [DIALOGUE_SEQUENCES]);
 
   useEffect(() => {
     if (screen !== 'victory') return;
@@ -163,7 +173,7 @@ export default function RangedTutorialPage() {
             attackCooldown: 1.2, attackTimer: 0,
             color: '#3b82f6',
             size: HERO_SIZE,
-            gifSprite: '/graphic2/이스키에르피리아/이스키에르피리아right.gif',
+            sprite: '이스키에르피리아.png',
             equippedSkillIds: ['iskier_frozen_orb'],
             uniqueSkillValue: 100,
             summonConfigs: [

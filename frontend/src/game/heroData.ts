@@ -3635,7 +3635,7 @@ export const HERO_GRAPHIC_IDS = new Set<string>([
   'lili', 'limu', 'liasian', 'rix', 'magatha', 'maraad', 'maiev', 'malfu',
   'mokra', 'muyeong_salk', 'baine', 'benedict', 'velen', 'voljin',
   'xianghua', 'seori_garam', 'sylva', 'anub', 'arthur', 'aeina',
-  'yeshtalktion', 'ultrion', 'ireneerpiria', 'yrel', 'iyena',
+  'yeshtalktion', 'ultrion', 'ireneerpiria', 'iskierpyria', 'yrel', 'iyena',
   'zedah', 'jainaro', 'zuljin', 'cheondung_garam', 'chen',
   'kalishan', 'kaern_dinohouf', 'keltu', 'quinchai', 'crow',
   'taran', 'tutankaton', 'trontum', 'tyran', 'feldah',

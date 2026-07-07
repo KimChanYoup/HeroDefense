@@ -20,6 +20,7 @@ export default function MeleeTutorialPage() {
   const engineRef = useRef<GameEngine | null>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const prevWaveRef = useRef<number>(0);
+  const narrationKeyRef = useRef<string | null>(null);
 
   const [screen, setScreen] = useState<MeleeTutorialScreen>('intro');
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -51,6 +52,7 @@ export default function MeleeTutorialPage() {
 
   useEffect(() => {
     if (!rendererRef.current) return;
+    rendererRef.current.t_i18n = t;
     rendererRef.current.wallLabel = t('game.wallLabel');
     rendererRef.current.wall2Label = t('game.wall2Label');
     rendererRef.current.wall3Label = t('game.wall3Label');
@@ -108,11 +110,19 @@ export default function MeleeTutorialPage() {
       prevWaveRef.current = currentWave;
       const key = `wave${currentWave}_clear` as keyof typeof DIALOGUE_SEQUENCES;
       if (DIALOGUE_SEQUENCES[key]) {
+        narrationKeyRef.current = key;
         setNarration(DIALOGUE_SEQUENCES[key] as string[]);
-        setTimeout(() => setNarration(null), 5000);
+        setTimeout(() => { setNarration(null); narrationKeyRef.current = null; }, 5000);
       }
     }
   }, [gameState, screen, DIALOGUE_SEQUENCES]);
+
+  useEffect(() => {
+    if (narrationKeyRef.current) {
+      const lines = DIALOGUE_SEQUENCES[narrationKeyRef.current as keyof typeof DIALOGUE_SEQUENCES];
+      if (lines) setNarration(lines as string[]);
+    }
+  }, [DIALOGUE_SEQUENCES]);
 
   useEffect(() => {
     if (screen !== 'victory') return;
@@ -148,7 +158,7 @@ export default function MeleeTutorialPage() {
             attackCooldown: 0.6, attackTimer: 0,
             color: '#ef4444',
             size: HERO_SIZE,
-            gifSprite: '/graphic2/케른 다이노후프/케른 다이노후프right.gif',
+            sprite: '케른 다이노후프.png',
           },
           {
             name: t('tutorial.melee.jedahLabel'),
@@ -163,7 +173,7 @@ export default function MeleeTutorialPage() {
             attackCooldown: 1.5, attackTimer: 0,
             color: '#3b82f6',
             size: HERO_SIZE + 4,
-            gifSprite: '/graphic2/제다/제다right.gif',
+            gifSprite: '/graphic2/제다/제다idle.gif',
           },
         ],
         waveGenerator: (waveNumber) => {

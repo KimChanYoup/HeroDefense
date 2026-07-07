@@ -46,11 +46,13 @@ export default function TutorialPage2() {
   const prevWaveRef = useRef<number>(0);
   const bossIntroShownRef = useRef<Set<BossIntroKey>>(new Set());
   const goldSavedRef = useRef(false);
+  const tRef = useRef(t);
+  useEffect(() => { tRef.current = t; }, [t]);
 
   const [screen, setScreen] = useState<TutorialScreen2>('intro');
   const [gameState, setGameState] = useState<GameState | null>(null);
   const [introLineIdx, setIntroLineIdx] = useState(0);
-  const [waveNarration, setWaveNarration] = useState<string[] | null>(null);
+  const [waveNarration, setWaveNarration] = useState<number | null>(null);
   const [bossLines, setBossLines] = useState<string[]>([]);
   const [bossLineIdx, setBossLineIdx] = useState(0);
   const [victoryLine, setVictoryLine] = useState(0);
@@ -106,6 +108,7 @@ export default function TutorialPage2() {
 
   useEffect(() => {
     if (!rendererRef.current) return;
+    rendererRef.current.t_i18n = t;
     rendererRef.current.wallLabel = t('game.wallLabel');
     rendererRef.current.wall2Label = t('game.wall2Label');
     rendererRef.current.wall3Label = t('game.wall3Label');
@@ -174,8 +177,7 @@ export default function TutorialPage2() {
 
     if (phase === 'wave_clear' && currentWave !== prevWaveRef.current) {
       prevWaveRef.current = currentWave;
-      const lines = WAVE_CLEAR_LINES[currentWave];
-      if (lines) setWaveNarration(lines);
+      if (WAVE_CLEAR_LINES[currentWave]) setWaveNarration(currentWave);
     }
 
     prevPhaseRef.current = phase;
@@ -189,6 +191,12 @@ export default function TutorialPage2() {
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isBossIntroScreen, bossLineIdx, bossLines]);
+
+  // 언어 변경 시 진행 중인 보스 인트로 대사 실시간 갱신
+  useEffect(() => {
+    if (screen === 'boss5_intro') setBossLines(BOSS5_INTRO_LINES);
+    else if (screen === 'boss10_intro') setBossLines(BOSS10_INTRO_LINES);
+  }, [BOSS5_INTRO_LINES, BOSS10_INTRO_LINES, screen]);
 
   useEffect(() => {
     if (screen !== 'victory' || victoryLine >= VICTORY_LINES.length) return;
@@ -272,7 +280,7 @@ export default function TutorialPage2() {
         ],
         waveGenerator: (waveNumber) => {
           const wave = generateTutorialStage2Wave(waveNumber);
-          return { ...wave, monsters: wave.monsters.map(m => ({ ...m, displayName: m.displayNameKey ? t(m.displayNameKey) : m.displayName })) };
+          return { ...wave, monsters: wave.monsters.map(m => ({ ...m, displayName: m.displayNameKey ? tRef.current(m.displayNameKey) : m.displayName })) };
         },
         initialPositions: [
           { x: 200, y: FIELD_Y_CENTER },
@@ -282,7 +290,7 @@ export default function TutorialPage2() {
     );
     engineRef.current = engine;
     engine.start();
-  }, [user]);
+  }, [user, t]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const dismissBossIntro = useCallback(() => {
     setScreen('playing');
@@ -421,9 +429,9 @@ export default function TutorialPage2() {
           );
         })()}
 
-        {waveNarration && screen === 'playing' && (
+        {waveNarration !== null && WAVE_CLEAR_LINES[waveNarration] && screen === 'playing' && (
           <div className="absolute bottom-0 left-0 right-0 bg-black/70 py-5 px-8 text-center pointer-events-none">
-            {waveNarration.map((line, i) => (
+            {WAVE_CLEAR_LINES[waveNarration].map((line, i) => (
               <p key={i} className={`text-gray-200 text-base ${line === '' ? 'h-2' : ''} ${line.startsWith('Feldah:') ? 'text-purple-300 italic' : ''}`}>
                 {line}
               </p>
@@ -518,7 +526,7 @@ export default function TutorialPage2() {
                   return (
                     <div key={entry.heroId} className="text-xs">
                       <div className="flex justify-between items-center mb-0.5">
-                        <span className="font-medium" style={{ color: entry.color }}>{entry.heroName}</span>
+                        <span className="font-medium" style={{ color: entry.color }}>{entry.heroId === 2 ? feldahName : entry.heroName}</span>
                         <div className="flex items-center gap-1 text-gray-300">
                           {meterTab === 'damage' && entry.summons.filter(s => s.damage > 0).map(s => (
                             <span key={s.skillId} style={{ color: s.color }}>{getSummonDisplayName(t, s.skillId, s.displayName)}: {s.damage.toLocaleString()}</span>

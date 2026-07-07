@@ -20,6 +20,7 @@ export default function HealerTutorialPage() {
   const engineRef = useRef<GameEngine | null>(null);
   const rendererRef = useRef<Renderer | null>(null);
   const prevWaveRef = useRef<number>(0);
+  const narrationKeyRef = useRef<string | null>(null);
 
   const [screen, setScreen] = useState<HealerTutorialScreen>('intro');
   const [gameState, setGameState] = useState<GameState | null>(null);
@@ -52,6 +53,7 @@ export default function HealerTutorialPage() {
 
   useEffect(() => {
     if (!rendererRef.current) return;
+    rendererRef.current.t_i18n = t;
     rendererRef.current.wallLabel = t('game.wallLabel');
     rendererRef.current.wall2Label = t('game.wall2Label');
     rendererRef.current.wall3Label = t('game.wall3Label');
@@ -114,11 +116,19 @@ export default function HealerTutorialPage() {
       prevWaveRef.current = currentWave;
       const key = `wave${currentWave}_clear` as keyof typeof DIALOGUE_SEQUENCES;
       if (DIALOGUE_SEQUENCES[key]) {
+        narrationKeyRef.current = key;
         setNarration(DIALOGUE_SEQUENCES[key] as string[]);
-        setTimeout(() => setNarration(null), 5000);
+        setTimeout(() => { setNarration(null); narrationKeyRef.current = null; }, 5000);
       }
     }
   }, [gameState, screen, DIALOGUE_SEQUENCES]);
+
+  useEffect(() => {
+    if (narrationKeyRef.current) {
+      const lines = DIALOGUE_SEQUENCES[narrationKeyRef.current as keyof typeof DIALOGUE_SEQUENCES];
+      if (lines) setNarration(lines as string[]);
+    }
+  }, [DIALOGUE_SEQUENCES]);
 
   useEffect(() => {
     if (screen !== 'victory') return;
@@ -154,7 +164,7 @@ export default function HealerTutorialPage() {
             attackCooldown: 1.2, attackTimer: 0,
             color: '#a855f7',
             size: HERO_SIZE,
-            gifSprite: '/graphic2/디즈가르도/디즈가르도right.gif',
+            sprite: '디즈가르도.png',
             equippedSkillIds: ['unique_iyena_discipline'],
             uniqueSkillValue: 35,
           },
@@ -171,7 +181,7 @@ export default function HealerTutorialPage() {
             attackCooldown: 1.5, attackTimer: 0,
             color: '#3b82f6',
             size: HERO_SIZE + 4,
-            gifSprite: '/graphic2/제다/제다right.gif',
+            gifSprite: '/graphic2/제다/제다idle.gif',
           },
           {
             name: t('tutorial.healer.cairneLabel'),
@@ -186,7 +196,7 @@ export default function HealerTutorialPage() {
             attackCooldown: 0.8, attackTimer: 0,
             color: '#ef4444',
             size: HERO_SIZE,
-            gifSprite: '/graphic2/케른 다이노후프/케른 다이노후프right.gif',
+            sprite: '케른 다이노후프.png',
           },
         ],
         waveGenerator: (waveNumber) => {

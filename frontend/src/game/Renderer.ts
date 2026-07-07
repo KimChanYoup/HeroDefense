@@ -6,6 +6,7 @@ import {
   FIELD_Y_MIN, FIELD_Y_MAX,
   COLORS,
 } from './constants';
+import { HERO_GRAPHIC_IDS } from './heroData';
 
 export class Renderer {
   public t_i18n?: any;
@@ -353,8 +354,8 @@ export class Renderer {
         this.drawHeroPlaceholder(hero);
       }
     } else {
-      const spritePath = hero.sprite || `${hero.name}.png`;
-      const img = this.loadImage(spritePath);
+      const spritePath = hero.sprite || (hero.heroDefId && HERO_GRAPHIC_IDS.has(hero.heroDefId) ? `${hero.name}.png` : null);
+      const img = spritePath ? this.loadImage(spritePath) : null;
       if (img && img.complete && img.naturalWidth > 0) {
         if (img.naturalWidth > img.naturalHeight) {
           // 스프라이트 레이아웃: 좌측 정사각형(이미지높이×이미지높이) 초상화 + 우측 스프라이트 2×2 그리드
