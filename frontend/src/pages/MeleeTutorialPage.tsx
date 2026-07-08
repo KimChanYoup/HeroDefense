@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useGameLock } from '../contexts/GameLockContext';
 import { GameEngine } from '../game/GameEngine';
 import { Renderer } from '../game/Renderer';
 import { generateMeleeTutorialWave } from '../game/TutorialWaveData';
@@ -15,6 +16,7 @@ type MeleeTutorialScreen = 'intro' | 'playing' | 'victory' | 'stage_end';
 export default function MeleeTutorialPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { setLocked } = useGameLock();
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<GameEngine | null>(null);
@@ -47,8 +49,8 @@ export default function MeleeTutorialPage() {
   useEffect(() => {
     if (!canvasRef.current) return;
     rendererRef.current = new Renderer(canvasRef.current);
-    return () => { engineRef.current?.stop(); };
-  }, []);
+    return () => { engineRef.current?.stop(); setLocked(false); };
+  }, [setLocked]);
 
   useEffect(() => {
     if (!rendererRef.current) return;
@@ -188,9 +190,10 @@ export default function MeleeTutorialPage() {
     );
     engineRef.current = engine;
     engine.start();
-  }, [t]);
+    setLocked(true);
+  }, [t]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const goToSelection = () => navigate('/tutorial');
+  const goToSelection = () => { setLocked(false); navigate('/tutorial'); };
 
   const currentDialogue = DIALOGUE_SEQUENCES.intro[dialogueIdx] || '';
   const isJedahSpeaking = currentDialogue.startsWith(jedahName + ':');

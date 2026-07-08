@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useGameLock } from '../contexts/GameLockContext';
 import { GameEngine } from '../game/GameEngine';
 import { Renderer } from '../game/Renderer';
 import { generateRangedTutorialWave } from '../game/TutorialWaveData';
@@ -15,6 +16,7 @@ type RangedTutorialScreen = 'intro' | 'playing' | 'victory' | 'stage_end';
 export default function RangedTutorialPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { setLocked } = useGameLock();
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<GameEngine | null>(null);
@@ -48,7 +50,7 @@ export default function RangedTutorialPage() {
   useEffect(() => {
     if (!canvasRef.current) return;
     rendererRef.current = new Renderer(canvasRef.current);
-    return () => { engineRef.current?.stop(); };
+    return () => { engineRef.current?.stop(); setLocked(false); };
   }, []);
 
   useEffect(() => {
@@ -199,9 +201,10 @@ export default function RangedTutorialPage() {
     );
     engineRef.current = engine;
     engine.start();
-  }, [t]);
+    setLocked(true);
+  }, [t]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const goToSelection = () => navigate('/tutorial');
+  const goToSelection = () => { setLocked(false); navigate('/tutorial'); };
 
   const currentDialogue = DIALOGUE_SEQUENCES.intro[dialogueIdx] || '';
 

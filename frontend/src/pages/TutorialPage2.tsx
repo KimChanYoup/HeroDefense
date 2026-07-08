@@ -6,6 +6,7 @@ import { HERO_DEFINITIONS } from '../game/heroData';
 import { Renderer } from '../game/Renderer';
 import { generateTutorialStage2Wave } from '../game/TutorialWaveData';
 import { useAuth } from '../contexts/AuthContext';
+import { useGameLock } from '../contexts/GameLockContext';
 import api from '../api/client';
 import type { GameState, HeroMeterEntry } from '../game/types';
 import {
@@ -38,6 +39,7 @@ export default function TutorialPage2() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { setLocked } = useGameLock();
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<GameEngine | null>(null);
@@ -103,7 +105,7 @@ export default function TutorialPage2() {
   useEffect(() => {
     if (!canvasRef.current) return;
     rendererRef.current = new Renderer(canvasRef.current);
-    return () => { engineRef.current?.stop(); };
+    return () => { engineRef.current?.stop(); setLocked(false); };
   }, []);
 
   useEffect(() => {
@@ -290,6 +292,7 @@ export default function TutorialPage2() {
     );
     engineRef.current = engine;
     engine.start();
+    setLocked(true);
   }, [user, t]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const dismissBossIntro = useCallback(() => {
@@ -303,15 +306,17 @@ export default function TutorialPage2() {
 
   const goToDashboard = useCallback(() => {
     api.post('/user/tutorial-progress', { progress: 'complete' }).catch(() => { });
+    setLocked(false);
     navigate('/');
-  }, [navigate]);
+  }, [navigate, setLocked]);
 
   const goToHeroes = useCallback(() => {
     api.post('/user/tutorial-progress', { progress: 'complete' }).catch(() => { });
+    setLocked(false);
     navigate('/heroes');
-  }, [navigate]);
+  }, [navigate, setLocked]);
 
-  const handleSkip = useCallback(() => { navigate('/'); }, [navigate]);
+  const handleSkip = useCallback(() => { setLocked(false); navigate('/'); }, [navigate, setLocked]);
 
   const currentWaveDisplay = gameState ? Math.min(gameState.currentWave, 10) : 0;
   const heroHp = gameState?.heroes[0]?.hp ?? 0;

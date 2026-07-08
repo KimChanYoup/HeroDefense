@@ -174,7 +174,7 @@ export default function Layout() {
                         <div className="max-h-80 overflow-y-auto divide-y divide-gray-700">
                           {notifications.map(n => (
                             <div key={n.id} className="px-4 py-3 hover:bg-gray-700/50 transition-colors">
-                              <div className="text-sm text-yellow-300 font-medium">{n.name}</div>
+                              <div className="text-sm text-yellow-300 font-medium">{((t?.achievements as any)?.[n.name]?.displayName) || n.displayName || n.name}</div>
                               <div className="text-xs text-gray-400 mt-0.5">
                                 {new Date(n.achievedAt).toLocaleDateString()} &nbsp;
                                 {n.rewardGold > 0 && <span className="text-yellow-500">+{n.rewardGold.toLocaleString()}G</span>}

@@ -228,6 +228,8 @@ export default function ProfilePage() {
           {/* 클릭 시 파일 선택 */}
           <input
             ref={fileInputRef}
+            id="avatar-upload"
+            name="avatar-upload"
             type="file"
             accept="image/*"
             className="hidden"
@@ -255,8 +257,10 @@ export default function ProfilePage() {
             {editing ? (
               <form onSubmit={handleUpdate} className="flex gap-2 items-end">
                 <div>
-                  <label className="block text-sm text-gray-400 mb-1">{t.profile.username}</label>
+                  <label htmlFor="username-edit" className="block text-sm text-gray-400 mb-1">{t.profile.username}</label>
                   <input
+                    id="username-edit"
+                    name="username"
                     type="text"
                     value={newUsername}
                     onChange={(e) => setNewUsername(e.target.value)}

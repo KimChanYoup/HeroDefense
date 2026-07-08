@@ -1,6 +1,7 @@
 import { useRef, useEffect, useState, useCallback, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { useGameLock } from '../contexts/GameLockContext';
 import { GameEngine } from '../game/GameEngine';
 import { Renderer } from '../game/Renderer';
 import { generateTankTutorialWave } from '../game/TutorialWaveData';
@@ -15,6 +16,7 @@ type TankTutorialScreen = 'intro' | 'playing' | 'victory' | 'stage_end';
 export default function TankTutorialPage() {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { setLocked } = useGameLock();
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<GameEngine | null>(null);
@@ -46,8 +48,8 @@ export default function TankTutorialPage() {
   useEffect(() => {
     if (!canvasRef.current) return;
     rendererRef.current = new Renderer(canvasRef.current);
-    return () => { engineRef.current?.stop(); };
-  }, []);
+    return () => { engineRef.current?.stop(); setLocked(false); };
+  }, [setLocked]);
 
   useEffect(() => {
     if (!rendererRef.current) return;
@@ -193,9 +195,10 @@ export default function TankTutorialPage() {
     );
     engineRef.current = engine;
     engine.start();
-  }, [t]);
+    setLocked(true);
+  }, [t]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const goToSelection = () => navigate('/tutorial');
+  const goToSelection = () => { setLocked(false); navigate('/tutorial'); };
 
   return (
     <div className="min-h-screen bg-gray-950 text-white flex flex-col items-center">

@@ -1603,6 +1603,8 @@ export default function GamePage() {
           {/* 검색창 */}
           <div className="mb-3">
             <input
+              id="hero-search"
+              name="hero-search"
               type="text"
               value={heroSearch}
               onChange={e => setHeroSearch(e.target.value)}

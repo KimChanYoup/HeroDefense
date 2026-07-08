@@ -6,6 +6,7 @@ import { HERO_DEFINITIONS } from '../game/heroData';
 import { Renderer } from '../game/Renderer';
 import { generateTutorialWave } from '../game/TutorialWaveData';
 import { useAuth } from '../contexts/AuthContext';
+import { useGameLock } from '../contexts/GameLockContext';
 import api from '../api/client';
 import type { GameState, HeroMeterEntry } from '../game/types';
 import {
@@ -35,6 +36,7 @@ export default function TutorialPage() {
   const { user } = useAuth();
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { setLocked } = useGameLock();
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const engineRef = useRef<GameEngine | null>(null);
@@ -69,7 +71,7 @@ export default function TutorialPage() {
   useEffect(() => {
     if (!canvasRef.current) return;
     rendererRef.current = new Renderer(canvasRef.current);
-    return () => { engineRef.current?.stop(); };
+    return () => { engineRef.current?.stop(); setLocked(false); };
   }, []);
 
   useEffect(() => {
@@ -231,6 +233,7 @@ export default function TutorialPage() {
     );
     engineRef.current = engine;
     engine.start();
+    setLocked(true);
   }, [user]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const dismissBossIntro = useCallback(() => {
@@ -251,8 +254,9 @@ export default function TutorialPage() {
     } catch {
       // ignore
     }
+    setLocked(false);
     navigate('/');
-  }, [navigate]);
+  }, [navigate, setLocked]);
 
   const saveStage1ProgressIfNeeded = async () => {
     try {
@@ -267,13 +271,15 @@ export default function TutorialPage() {
 
   const handleNext = useCallback(async () => {
     await saveStage1ProgressIfNeeded();
+    setLocked(false);
     navigate('/tutorial/basic2');
-  }, [navigate, saveStage1ProgressIfNeeded]);
+  }, [navigate, setLocked, saveStage1ProgressIfNeeded]);
 
   const handleComplete = useCallback(async () => {
     await saveStage1ProgressIfNeeded();
+    setLocked(false);
     navigate('/');
-  }, [navigate, saveStage1ProgressIfNeeded]);
+  }, [navigate, setLocked, saveStage1ProgressIfNeeded]);
 
   const currentWaveDisplay = gameState ? Math.min(gameState.currentWave, 5) : 0;
   const heroHp = gameState?.heroes[0]?.hp ?? 0;
