@@ -3,6 +3,7 @@ import { Response } from 'express';
 import { UserService } from './user.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { AuthenticatedRequest } from '../types/auth.types';
+import { UpdateProfileDto } from './dto/update-profile.dto';
 
 @Controller('user')
 @UseGuards(JwtAuthGuard)
@@ -15,7 +16,7 @@ export class UserController {
   }
 
   @Put('profile')
-  updateProfile(@Request() req: AuthenticatedRequest, @Body() data: { username?: string; avatarUrl?: string }) {
+  updateProfile(@Request() req: AuthenticatedRequest, @Body() data: UpdateProfileDto) {
     return this.userService.updateProfile(req.user.id, data);
   }
 

@@ -1,5 +1,6 @@
 import { Injectable, NotFoundException, BadRequestException } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
+import { UpdateProfileDto } from './dto/update-profile.dto';
 
 // 마일스톤 타입 → 지급할 heroId (클라이언트가 heroId를 직접 지정하지 못하도록 서버에서 결정)
 const MILESTONE_HERO_MAP: Record<string, string> = {
@@ -84,10 +85,15 @@ export class UserService {
     });
   }
 
-  async updateProfile(userId: number, data: { username?: string; avatarUrl?: string }) {
+  async updateProfile(userId: number, data: UpdateProfileDto) {
+    const updateData = {
+      ...(data.username !== undefined ? { username: data.username } : {}),
+      ...(data.avatarUrl !== undefined ? { avatarUrl: data.avatarUrl } : {}),
+    };
+
     return this.prisma.user.update({
       where: { id: userId },
-      data,
+      data: updateData,
       select: { id: true, username: true, avatarUrl: true },
     });
   }
