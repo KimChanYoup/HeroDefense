@@ -2,6 +2,7 @@ import { Controller, Get, Post, Body, Param, UseGuards, Request } from '@nestjs/
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { TournamentService } from './tournament.service';
 import { AuthenticatedRequest } from '../types/auth.types';
+import { SubmitTournamentResultDto } from './dto/submit-tournament-result.dto';
 
 @Controller('tournaments')
 @UseGuards(JwtAuthGuard)
@@ -50,7 +51,7 @@ export class TournamentController {
   submitResult(
     @Param('id') id: string,
     @Request() req: AuthenticatedRequest,
-    @Body() body: { matchId: string; winnerId: number; player1Score: number; player2Score: number },
+    @Body() body: SubmitTournamentResultDto,
   ) {
     return this.tournamentService.submitResult(
       id,

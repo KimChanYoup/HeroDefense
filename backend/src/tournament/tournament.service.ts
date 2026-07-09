@@ -116,6 +116,25 @@ export class TournamentService {
       throw new BadRequestException('Not a player in this match');
     }
 
+    const winnerIsPlayer1 = winnerId === match.player1Id;
+    const winnerIsPlayer2 = winnerId === match.player2Id;
+    if (!winnerIsPlayer1 && !winnerIsPlayer2) {
+      throw new BadRequestException('Winner must be a player in this match');
+    }
+
+    if (!Number.isInteger(player1Score) || !Number.isInteger(player2Score)) {
+      throw new BadRequestException('Scores must be integers');
+    }
+    if (player1Score < 0 || player2Score < 0 || player1Score > 1_000_000 || player2Score > 1_000_000) {
+      throw new BadRequestException('Invalid score value');
+    }
+    if (winnerIsPlayer1 && player1Score < player2Score) {
+      throw new BadRequestException('Winner score cannot be lower than opponent score');
+    }
+    if (winnerIsPlayer2 && player2Score < player1Score) {
+      throw new BadRequestException('Winner score cannot be lower than opponent score');
+    }
+
     match.winnerId = winnerId;
     match.player1Score = player1Score;
     match.player2Score = player2Score;
