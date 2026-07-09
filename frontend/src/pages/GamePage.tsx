@@ -1187,7 +1187,8 @@ export default function GamePage() {
     return getHeroDisplayName(hero);
   };
 
-  const getSummonDisplayName = (skillId: string, rawName: string) => {
+  const getSummonDisplayName = (skillId: string, rawName: string, displayNameKey?: string) => {
+    if (displayNameKey) return t_i18n(displayNameKey);
     for (const h of HERO_DEFINITIONS) {
       for (const r of h.classRoutes) {
         const s = r.skills.find(sk => sk.id === skillId);
@@ -1864,7 +1865,7 @@ export default function GamePage() {
                     {mySummons.map(s => (
                       <div key={s.id} className="bg-gray-800/60 border border-gray-700/50 rounded-lg p-2 flex flex-col gap-1 shadow-md">
                         <div className="flex justify-between items-center px-0.5">
-                          <span className="text-[10px] font-black" style={{ color: s.color }}>{getSummonDisplayName(s.skillId, s.displayName)}</span>
+                          <span className="text-[10px] font-black" style={{ color: s.color }}>{getSummonDisplayName(s.skillId, s.displayName, s.displayNameKey)}</span>
                           <span className="text-[9px] text-gray-400 font-mono">HP {Math.max(0, Math.ceil(s.hp))}</span>
                         </div>
                         <div className="w-full bg-gray-900 rounded-full h-1.5 overflow-hidden">
@@ -1991,7 +1992,7 @@ export default function GamePage() {
                         <div className="flex items-center gap-1 text-gray-300">
                           {meterTab === 'damage' && entry.summons.filter(s => s.damage > 0).map(s => (
                             <span key={s.skillId} style={{ color: s.color }} className="text-gray-400">
-                              {getSummonDisplayName(s.skillId, s.displayName)}: {s.damage.toLocaleString()}
+                              {getSummonDisplayName(s.skillId, s.displayName, s.displayNameKey)}: {s.damage.toLocaleString()}
                             </span>
                           ))}
                           {meterTab === 'healing' && shieldTotal > 0 && (

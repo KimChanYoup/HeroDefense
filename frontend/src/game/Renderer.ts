@@ -797,7 +797,8 @@ export class Renderer {
     ctx.font = '7px sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'alphabetic';
-    ctx.fillText(summon.displayName, x, y + r + 9);
+    const summonLabel = (summon.displayNameKey && this.t_i18n) ? this.t_i18n(summon.displayNameKey) : summon.displayName;
+    ctx.fillText(summonLabel, x, y + r + 9);
     ctx.restore();
   }
 

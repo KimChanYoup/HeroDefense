@@ -3776,7 +3776,7 @@ export class GameEngine {
       const summon = this.state.summons.find(s => s.summonerId === heroId && s.skillId === skillId);
       let summonEntry = entry.summons.find(s => s.skillId === skillId);
       if (!summonEntry) {
-        summonEntry = { skillId, displayName: summon?.displayName ?? skillId, color: summon?.color ?? '#FFFFFF', damage: 0 };
+        summonEntry = { skillId, displayName: summon?.displayName ?? skillId, displayNameKey: summon?.displayNameKey, color: summon?.color ?? '#FFFFFF', damage: 0 };
         entry.summons.push(summonEntry);
       }
       summonEntry.damage += amount;
@@ -4540,6 +4540,7 @@ export class GameEngine {
       summonerId: hero.id,
       skillId: config.skillId,
       displayName: config.displayName,
+      displayNameKey: config.displayNameKey,
       role: config.role,
       maxHp: summonHp,
       hp: summonHp,

@@ -72,6 +72,7 @@ export interface Projectile {
 export interface SummonConfig {
   skillId: string;
   displayName: string;
+  displayNameKey?: string;
   hp: number;
   atk: number;
   def: number;
@@ -88,6 +89,7 @@ export interface GameSummon {
   summonerId: number;  // owning hero's id
   skillId: string;
   displayName: string;
+  displayNameKey?: string;
   role: string;
   maxHp: number;
   hp: number;
@@ -490,6 +492,7 @@ export interface GameState {
 export interface SummonMeterEntry {
   skillId: string;
   displayName: string;
+  displayNameKey?: string;
   color: string;
   damage: number;
 }

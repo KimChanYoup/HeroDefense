@@ -79,7 +79,8 @@ export default function AIGamePage() {
     return rawName;
   };
 
-  const getSummonDisplayName = (skillId: string, rawName: string): string => {
+  const getSummonDisplayName = (skillId: string, rawName: string, displayNameKey?: string): string => {
+    if (displayNameKey) return t_i18n(displayNameKey);
     for (const h of HERO_DEFINITIONS) {
       for (const r of h.classRoutes) {
         const s = r.skills.find(sk => sk.id === skillId);
@@ -1083,7 +1084,7 @@ export default function AIGamePage() {
                             <span className="font-medium" style={{ color: entry.color }}>{getMeterHeroName(entry.heroId, entry.heroName)}</span>
                             <div className="flex items-center gap-1 text-gray-300">
                               {meterTab === 'damage' && entry.summons.filter(s => s.damage > 0).map(s => (
-                                <span key={s.skillId} style={{ color: s.color }} className="text-gray-400">{getSummonDisplayName(s.skillId, s.displayName)}: {s.damage.toLocaleString()}</span>
+                                <span key={s.skillId} style={{ color: s.color }} className="text-gray-400">{getSummonDisplayName(s.skillId, s.displayName, s.displayNameKey)}: {s.damage.toLocaleString()}</span>
                               ))}
                               {meterTab === 'healing' && shieldTotal > 0 && (
                                 <span style={{ color: '#FBBF24' }} className="text-gray-400">{t.game.shieldLabel}: {shieldTotal.toLocaleString()}</span>
