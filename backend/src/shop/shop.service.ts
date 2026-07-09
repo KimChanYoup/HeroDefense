@@ -1,4 +1,5 @@
 import { Injectable, BadRequestException, NotFoundException, ConflictException } from '@nestjs/common';
+import { Prisma } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 
 const RARITY_PRICES: Record<string, number> = {
@@ -54,48 +55,52 @@ export class ShopService {
     if (!template) throw new NotFoundException('Hero not found');
     if (template.isAchievement) throw new BadRequestException('This hero cannot be purchased');
 
-    // Check if already owned
-    const existing = await this.prisma.userHero.findUnique({
-      where: { userId_templateId: { userId, templateId } },
-    });
-    if (existing) throw new ConflictException('You already own this hero');
-
     const price = RARITY_PRICES[template.rarity] || 100;
 
-    // Check gold
-    const user = await this.prisma.user.findUnique({
-      where: { id: userId },
-      select: { gold: true },
-    });
-    if (!user || user.gold < price) {
-      throw new BadRequestException('Not enough gold');
-    }
+    try {
+      return await this.prisma.$transaction(async (tx) => {
+        const existing = await tx.userHero.findUnique({
+          where: { userId_templateId: { userId, templateId } },
+        });
+        if (existing) throw new ConflictException('You already own this hero');
 
-    // Transaction: deduct gold + create user hero
-    const [updatedUser, userHero] = await this.prisma.$transaction([
-      this.prisma.user.update({
-        where: { id: userId },
-        data: { gold: { decrement: price } },
-        select: { gold: true },
-      }),
-      this.prisma.userHero.create({
-        data: { userId, templateId },
-        include: {
-          template: {
-            include: {
-              spec: { include: { gameClass: true } },
-              race: true,
-              element: true,
-              faction: true,
+        const updated = await tx.user.updateMany({
+          where: { id: userId, gold: { gte: price } },
+          data: { gold: { decrement: price } },
+        });
+        if (updated.count === 0) {
+          throw new BadRequestException('Not enough gold');
+        }
+
+        const userHero = await tx.userHero.create({
+          data: { userId, templateId },
+          include: {
+            template: {
+              include: {
+                spec: { include: { gameClass: true } },
+                race: true,
+                element: true,
+                faction: true,
+              },
             },
           },
-        },
-      }),
-    ]);
+        });
 
-    return {
-      hero: userHero,
-      remainingGold: updatedUser.gold,
-    };
+        const updatedUser = await tx.user.findUnique({
+          where: { id: userId },
+          select: { gold: true },
+        });
+
+        return {
+          hero: userHero,
+          remainingGold: updatedUser?.gold ?? 0,
+        };
+      });
+    } catch (error) {
+      if (error instanceof Prisma.PrismaClientKnownRequestError && error.code === 'P2002') {
+        throw new ConflictException('You already own this hero');
+      }
+      throw error;
+    }
   }
 }
