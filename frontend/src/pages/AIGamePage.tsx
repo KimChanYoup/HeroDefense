@@ -1012,7 +1012,7 @@ export default function AIGamePage() {
             <div className="flex gap-2 mb-2 flex-wrap">{coopState.synergies.map((s, i) => <span key={i} className="text-xs px-2 py-0.5 rounded bg-amber-900/30 border border-amber-700/60 text-amber-300">✨ {s.type === 'race' ? getTranslatedRace(s.name, t_i18n) : getTranslatedElement(s.name, t_i18n)} (T{s.tier})</span>)}</div>
           )}
           <div className="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden mb-4 relative">
-            <canvas ref={coopCanvasCallback} width={CANVAS_WIDTH} height={CANVAS_HEIGHT} style={{ width: '100%', height: 'auto', display: 'block', imageRendering: 'pixelated' }} />
+            <canvas ref={coopCanvasCallback} width={CANVAS_WIDTH} height={CANVAS_HEIGHT} style={{ width: '100%', height: 'auto', display: 'block' }} />
             <div className="absolute bottom-2 right-2 flex items-center bg-black/60 px-2 py-1 rounded">
               <label className="text-xs text-gray-300 flex items-center gap-1.5 cursor-pointer">
                 <input type="checkbox" checked={showNormalNames} onChange={e => setShowNormalNames(e.target.checked)} className="w-3 h-3 accent-yellow-500 rounded bg-gray-700 border-gray-600 focus:ring-yellow-500 focus:ring-offset-gray-900" />

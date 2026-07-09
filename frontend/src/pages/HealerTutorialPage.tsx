@@ -271,7 +271,7 @@ export default function HealerTutorialPage() {
         </div>
       )}
 
-      <div className="relative w-full max-w-5xl mt-4">
+      <div className="relative w-full max-w-5xl mt-4 overflow-hidden">
         {showCanvas && (
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900 border-b border-purple-900/50">
             <span className="text-purple-500 font-bold">{t('tutorial.healer.trainingLabel')}</span>

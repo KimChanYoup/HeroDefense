@@ -239,7 +239,7 @@ export default function TankTutorialPage() {
         </div>
       )}
 
-      <div className="relative w-full max-w-5xl mt-4">
+      <div className="relative w-full max-w-5xl mt-4 overflow-hidden">
         {showCanvas && (
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900 border-b border-red-900/50">
             <div className="flex items-center gap-4">

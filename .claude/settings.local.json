@@ -8,7 +8,20 @@
       "Bash(npx tsc *)",
       "Bash(dir \"D:\\\\fantasy\\\\trans2\\\\frontend\")",
       "Bash(node_modules/.bin/tsc --noEmit)",
-      "Bash(python *)"
+      "Bash(python *)",
+      "Bash(xargs ls)",
+      "Bash(npx playwright *)",
+      "Read(//tmp/**)",
+      "Bash(npx playwright@1.60.0 run-server)",
+      "Bash(node /tmp/pw_debug.mjs)",
+      "Bash(node pw_debug.mjs)",
+      "Bash(node pw_debug.cjs)",
+      "Bash(PLAYWRIGHT_BROWSERS_PATH=/sgoinfre/chkim/.playwright-cache npx playwright install chromium)",
+      "Bash(PLAYWRIGHT_BROWSERS_PATH=/sgoinfre/chkim/.playwright-cache node pw_debug.cjs)",
+      "Bash(PLAYWRIGHT_BROWSERS_PATH=/sgoinfre/chkim/.playwright-cache node *)",
+      "Bash(docker compose *)",
+      "Bash(curl -sk https://localhost:8443 -o /dev/null -w \"%{http_code}\")",
+      "Bash(docker exec *)"
     ]
   }
 }

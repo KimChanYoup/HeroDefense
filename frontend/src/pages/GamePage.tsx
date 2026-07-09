@@ -1742,7 +1742,7 @@ export default function GamePage() {
       )}
 
       {/* Game Canvas */}
-      <div className="bg-gray-800 rounded-lg border border-gray-700 p-2 mb-4 overflow-x-auto relative">
+      <div className="bg-gray-800 rounded-lg border border-gray-700 p-2 mb-4 overflow-hidden relative">
         {/* 드래그앤드롭 힌트 (게임 시작 전, 솔로만) */}
         {!isStarted && !isGuest && !isMultiplayer && !heroDataSubmitted && (
           <div className="absolute top-3 left-1/2 -translate-x-1/2 text-xs text-yellow-300 bg-black/60 px-3 py-1 rounded pointer-events-none z-10 whitespace-nowrap">
@@ -1771,7 +1771,8 @@ export default function GamePage() {
           height={CANVAS_HEIGHT}
           className="rounded block mx-auto"
           style={{
-            imageRendering: 'pixelated',
+            maxWidth: '100%',
+            height: 'auto',
             cursor: !isStarted && !isGuest && !heroDataSubmitted ? 'grab' : 'default',
           }}
           onMouseDown={handleCanvasMouseDown}

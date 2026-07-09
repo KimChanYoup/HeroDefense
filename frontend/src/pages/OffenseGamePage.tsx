@@ -1072,7 +1072,7 @@ export default function OffenseGamePage() {
         </>
       )}
 
-      <div className="bg-gray-800 rounded-lg border border-gray-700 p-2 mb-4 overflow-x-auto relative">
+      <div className="bg-gray-800 rounded-lg border border-gray-700 p-2 mb-4 overflow-hidden relative">
         {!isStarted && <div className="absolute top-3 left-1/2 -translate-x-1/2 text-xs text-red-300 bg-black/60 px-3 py-1 rounded pointer-events-none z-10 whitespace-nowrap">{(t.offense as any).offenseDragHint}</div>}
         {isInfiniteMode && isStarted && (
           <div className="absolute top-3 left-4 z-10 bg-black/75 rounded-lg px-3 py-1.5 pointer-events-none">
@@ -1154,7 +1154,7 @@ export default function OffenseGamePage() {
             <div className="text-xs text-red-400 mt-0.5 text-right">{Math.max(0, Math.ceil(enemyWallHp))} / {enemyWallMaxHp}</div>
           </div>
         )}
-        <canvas ref={canvasRef} width={CANVAS_WIDTH} height={CANVAS_HEIGHT} className="rounded block mx-auto" style={{ imageRendering: 'pixelated', cursor: !isStarted ? 'grab' : 'default' }} onMouseDown={handleCanvasMouseDown} onMouseMove={handleCanvasMouseMove} onMouseUp={handleCanvasMouseUp} onMouseLeave={handleCanvasMouseUp} />
+        <canvas ref={canvasRef} width={CANVAS_WIDTH} height={CANVAS_HEIGHT} className="rounded block mx-auto" style={{ maxWidth: '100%', height: 'auto', cursor: !isStarted ? 'grab' : 'default' }} onMouseDown={handleCanvasMouseDown} onMouseMove={handleCanvasMouseMove} onMouseUp={handleCanvasMouseUp} onMouseLeave={handleCanvasMouseUp} />
         <div className="absolute bottom-2 right-2 flex items-center bg-black/60 px-2 py-1 rounded">
           <label className="text-xs text-gray-300 flex items-center gap-1.5 cursor-pointer">
             <input type="checkbox" checked={showNormalNames} onChange={e => setShowNormalNames(e.target.checked)} className="w-3 h-3 accent-yellow-500 rounded bg-gray-700 border-gray-600 focus:ring-yellow-500 focus:ring-offset-gray-900" />

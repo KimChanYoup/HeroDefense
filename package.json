@@ -1,0 +1,24 @@
+{
+  "name": "trans",
+  "version": "1.0.0",
+  "description": "*This project has been created as part of the 42 curriculum by chkim, minpark, injo, yeonjuki, chakim.*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KimChanYoup/trans2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KimChanYoup/trans2/issues"
+  },
+  "homepage": "https://github.com/KimChanYoup/trans2#readme",
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}

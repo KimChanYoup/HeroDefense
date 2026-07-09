@@ -323,7 +323,7 @@ export default function TutorialPage() {
       )}
 
       {/* ── 게임 캔버스 영역 ── */}
-      <div className="relative w-full max-w-5xl mt-4">
+      <div className="relative w-full max-w-5xl mt-4 overflow-hidden">
         {showCanvas && (
           <div className="flex items-center justify-between px-4 py-2 bg-gray-900 border-b border-gray-700">
             <div className="flex items-center gap-3">

@@ -114,7 +114,7 @@ export default function Layout() {
       <BrowserWarning />
       <nav className="bg-gray-800 border-b border-gray-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between min-h-16">
             {/* 로고 + 데스크톱 메뉴 */}
             <div className="flex items-center gap-6">
               {isLocked ? (
@@ -130,7 +130,7 @@ export default function Layout() {
                 </Link>
               )}
               {user && (
-                <div className="hidden md:flex items-center gap-4">
+                <div className="hidden xl:flex items-center gap-4">
                   <NavItem to="/game" label={t.nav.play} className="text-yellow-400 hover:text-yellow-300 text-sm font-semibold" />
                   <NavItem to="/tutorial" label={t.nav.tutorial} className="text-green-400 hover:text-green-300 text-sm" />
                   <NavItem to="/lobby" label={t.nav.lobby} className="text-blue-400 hover:text-blue-300 text-sm" />
@@ -246,7 +246,7 @@ export default function Layout() {
               {/* 햄버거 버튼 — 모바일 전용 */}
               {user && (
                 <button
-                  className="md:hidden text-gray-300 hover:text-white p-1 ml-1"
+                  className="xl:hidden text-gray-300 hover:text-white p-1 ml-1"
                   onClick={() => setMobileOpen(v => !v)}
                   aria-label="메뉴 열기"
                 >
@@ -264,7 +264,7 @@ export default function Layout() {
 
         {/* 모바일 드롭다운 메뉴 */}
         {user && mobileOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700 px-4 py-3 flex flex-col gap-3">
+          <div className="xl:hidden bg-gray-800 border-t border-gray-700 px-4 py-3 flex flex-col gap-3">
             <NavItem to="/game"        label={t.nav.play}         className="text-yellow-400 hover:text-yellow-300 text-sm font-semibold py-1" />
             <NavItem to="/tutorial"    label={t.nav.tutorial}     className="text-green-400 hover:text-green-300 text-sm py-1" />
             <NavItem to="/lobby"       label={t.nav.lobby}        className="text-blue-400 hover:text-blue-300 text-sm py-1" />
