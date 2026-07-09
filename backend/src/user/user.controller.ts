@@ -4,6 +4,13 @@ import { UserService } from './user.service';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 import { AuthenticatedRequest } from '../types/auth.types';
 import { UpdateProfileDto } from './dto/update-profile.dto';
+import {
+  ClaimLandRewardDto,
+  HeroSaveDto,
+  ProtagonistSaveDto,
+  UpdateCrystalsDto,
+  UpdateGoldDto,
+} from './dto/user-actions.dto';
 
 @Controller('user')
 @UseGuards(JwtAuthGuard)
@@ -27,18 +34,13 @@ export class UserController {
    * delta 음수 → 골드 소모 (스킬 구매 등)
    */
   @Post('gold')
-  updateGold(@Request() req: AuthenticatedRequest, @Body() body: { delta: number }) {
-    const delta = Math.floor(body.delta);
-    // 한 요청으로 획득 가능한 최대 골드 = 500,000 (게임 한 판 최대치)
-    if (delta > 500_000) throw new BadRequestException('Gold delta exceeds maximum');
-    return this.userService.updateGold(req.user.id, delta);
+  updateGold(@Request() req: AuthenticatedRequest, @Body() body: UpdateGoldDto) {
+    return this.userService.updateGold(req.user.id, body.delta);
   }
 
   @Post('crystals')
-  updateCrystals(@Request() req: AuthenticatedRequest, @Body() body: { delta: number }) {
-    const delta = Math.floor(body.delta);
-    if (delta > 100_000) throw new BadRequestException('Crystal delta exceeds maximum');
-    return this.userService.updateCrystals(req.user.id, delta);
+  updateCrystals(@Request() req: AuthenticatedRequest, @Body() body: UpdateCrystalsDto) {
+    return this.userService.updateCrystals(req.user.id, body.delta);
   }
 
   @Get('heroes')
@@ -47,7 +49,7 @@ export class UserController {
   }
 
   @Post('protagonist-save')
-  updateProtagonistSave(@Request() req: AuthenticatedRequest, @Body() body: { saveData: unknown }) {
+  updateProtagonistSave(@Request() req: AuthenticatedRequest, @Body() body: ProtagonistSaveDto) {
     if (JSON.stringify(body.saveData).length > 50_000) {
       throw new BadRequestException('Save data too large');
     }
@@ -55,7 +57,7 @@ export class UserController {
   }
 
   @Post('hero-save')
-  updateHeroSave(@Request() req: AuthenticatedRequest, @Body() body: { templateId: number; saveData: unknown }) {
+  updateHeroSave(@Request() req: AuthenticatedRequest, @Body() body: HeroSaveDto) {
     if (JSON.stringify(body.saveData).length > 50_000) {
       throw new BadRequestException('Save data too large');
     }
@@ -76,10 +78,8 @@ export class UserController {
 
   /** 오펜스 랜드 클리어 보상 — stageId로 heroId 서버 결정 */
   @Post('claim-land-reward')
-  claimLandReward(@Request() req: AuthenticatedRequest, @Body() body: { stageId: number }) {
-    const stageId = Math.floor(Number(body.stageId));
-    if (!stageId || stageId < 1) throw new BadRequestException('Invalid stageId');
-    return this.userService.claimLandReward(req.user.id, stageId);
+  claimLandReward(@Request() req: AuthenticatedRequest, @Body() body: ClaimLandRewardDto) {
+    return this.userService.claimLandReward(req.user.id, body.stageId);
   }
 
   /** 상점 전용 영웅 지급 — protagonist 영웅은 허용하지 않음 */
