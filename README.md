@@ -421,12 +421,12 @@ Each technology below was chosen after evaluating alternatives. The trade-off re
 | Friend system | Send/accept/reject/delete friend requests, online status | chkim |
 | Friend direct messaging | Real-time DM chat between friends with message history | chkim · ahrelee |
 | GDPR / data controls | Download personal data as JSON; delete account with confirmation | chkim · woonhan |
-| Hero Defense game (solo) | 30-wave Canvas game with boss mechanics | chkim |
+| Hero Defense game (solo) | 30-wave Canvas game with boss mechanics | chkim · minpark |
 | Multiplayer party (2P) | Real-time 2-player WebSocket co-op; reconnection and lobby state preservation | chkim · ahrelee |
 | Raid mode (10–20P) | Multi-party boss raid with 4 synchronized parties | chkim · ahrelee |
 | Hero collection (58 heroes) | R/SR/SSR heroes with skills, star upgrades, synergy | chkim |
 | Synergy system | Race × Element 2/3/4-hero bonus stacking | chkim |
-| Skill system | 100+ unique skill handlers per hero | chkim |
+| Skill system | 100+ unique skill handlers per hero | chkim · minpark |
 | Shop (gold & crystal) | Hero purchase, summon gacha, currency exchange; atomic gold deduction | chkim · woonhan |
 | Wall Talents | Upgradeable wall defense talent tree | chkim |
 | Dungeon Offense mode | Attack AI-controlled dungeons to unlock factions | chkim |

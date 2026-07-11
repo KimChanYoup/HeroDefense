@@ -8,7 +8,7 @@ YELLOW		= \033[0;33m
 CYAN		= \033[0;36m
 RESET		= \033[0m
 
-.PHONY: all up down re clean fclean logs status open help
+.PHONY: all up down re clean fclean logs status open help db
 
 # ─── 기본 타겟 ───────────────────────────────────────────────────────────────
 
@@ -65,6 +65,10 @@ status:
 	@echo "$(CYAN)─── 네트워크 ───────────────────────────────$(RESET)"
 	@docker network ls | grep ft_transcendence || true
 
+db:
+	@echo "$(GREEN)▶  Database(psql)에 접속 중...$(RESET)"
+	docker exec -it ft_trans_db psql -U admin -d hero_defense
+
 # ─── 내부 헬퍼 ───────────────────────────────────────────────────────────────
 
 env:
@@ -99,6 +103,7 @@ help:
 	@echo "  $(GREEN)make fclean$(RESET)    - 전체 정리 (볼륨 포함)"
 	@echo "  $(GREEN)make logs$(RESET)      - 전체 로그"
 	@echo "  $(GREEN)make status$(RESET)    - 컨테이너 상태 확인"
+	@echo "  $(GREEN)make db$(RESET)        - PostgreSQL(psql) 접속"
 	@echo ""
 	@echo "  접속: $(CYAN)$(URL)$(RESET)"
 	@echo ""
